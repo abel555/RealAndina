@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @cult.title %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @cult.image %>
+</p>
+
+<%= link_to 'Edit', edit_cult_path(@cult) %> |
+<%= link_to 'Back', cults_path %>

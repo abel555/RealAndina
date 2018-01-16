@@ -1,0 +1,43 @@
+
+<section id="portfolio" class="bg-light-gray">
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Crops</h2>
+      </div>
+    </div>
+    <% if user_signed_in? %>
+      <div type="button" class="btn ">
+        <%= link_to 'New Cult', new_cult_path %>
+      </div>
+    <% end %>
+    <div class="row">
+      <% @cults.each do |cult| %>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-responsive" alt=""<%= image_tag cult.image.thumb4.url %>
+          </a>
+          <div class="portfolio-caption">
+            <h4><%= cult.title %></h4>
+            <p class="text-muted">Nombre en ingles</p>
+            <% if user_signed_in? %>
+              <td><%= link_to 'Edit', edit_cult_path(cult) %></td>
+              <td><%= link_to 'Destroy', cult, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
+
+
+
+
+

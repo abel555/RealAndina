@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @pro.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @pro.body %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag(@pro.image_url.to_s) %>
+</p>
+
+<%= link_to 'Edit', edit_pro_path(@pro) %> |
+<%= link_to 'Back', pros_path %>

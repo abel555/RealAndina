@@ -1,0 +1,2333 @@
+/*!
+ * Start Bootstrap - Agency v3.3.7+1 (http://startbootstrap.com/template-overviews/agency)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+.btn-primary.active,
+ .btn-primary:active,
+ .btn-xl.active,
+ .btn-xl:active,
+ .open .dropdown-toggle.btn-primary,
+ .open .dropdown-toggle.btn-xl{
+  background-image:none
+ }
+ body{
+  overflow-x:hidden;
+  font-family:"Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+  webkit-tap-highlight-color:#fed136
+  height: 100%;
+
+  
+  }
+ .btn-primary,.btn-xl,h1,h2,h3,h4,h5,h6{
+  font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700
+  }
+ .text-muted{color:white;font-size:18px;}
+ .text-primary,a{color:#fed136}p{font-size:14px;line-height:1.75}p
+ .large{font-size:16px}a,a.active,a:active,a:focus,a:hover{outline:0}a
+ .active,a:active,a:focus,a:hover{color:#fec503}
+ .img-centered{
+  margin:0 auto
+ }
+ .bg-light-gray{
+  background-color:#ccced1;
+ }
+ .bg-darkest-gray{
+  background-color:#222
+ }
+ .btn-primary{
+  color:#fff;
+  background-color:#fed136;
+  border-color:#fed136
+ }
+ .btn-primary.active,
+ .btn-primary:active,
+ .btn-primary:focus,
+ .btn-primary:hover,
+ .open .dropdown-toggle.btn-primary{color:#fff;background-color:#fec503;border-color:#f6bf01}
+ .btn-primary.disabled,
+ .btn-primary.disabled.active,
+ .btn-primary.disabled:active,
+ .btn-primary.disabled:focus,
+ .btn-primary.disabled:hover,
+ .btn-primary[disabled],
+ .btn-primary[disabled].active,
+ .btn-primary[disabled]:active,
+ .btn-primary[disabled]:focus,
+ .btn-primary[disabled]:hover,fieldset[disabled] 
+ .btn-primary,fieldset[disabled] 
+ .btn-primary.active,fieldset[disabled] 
+ .btn-primary:active,fieldset[disabled] 
+ .btn-primary:focus,fieldset[disabled] 
+ .btn-primary:hover{background-color:#fed136;border-color:#fed136}
+ .btn-primary .badge{color:#fed136;background-color:#fff}
+ .btn-xl{color:#fff;background-color:#fed136;border-color:#fed136;border-radius:3px;font-size:18px;padding:20px 40px}
+ .btn-xl.active,
+ .btn-xl:active,
+ .btn-xl:focus,.btn-xl:hover,.open .dropdown-toggle.btn-xl{color:#fff;background-color:#fec503;border-color:#f6bf01}
+ .btn-xl.disabled,.btn-xl.disabled.active,
+ .btn-xl.disabled:active,.btn-xl.disabled:focus,
+ .btn-xl.disabled:hover,.btn-xl[disabled],
+ .btn-xl[disabled].active,.btn-xl[disabled]:active,
+ .btn-xl[disabled]:focus,.btn-xl[disabled]:hover,fieldset[disabled] 
+ .btn-xl,fieldset[disabled] .btn-xl.active,fieldset[disabled] 
+ .btn-xl:active,fieldset[disabled] .btn-xl:focus,fieldset[disabled] 
+ .btn-xl:hover{background-color:#fed136;border-color:#fed136}.btn-xl 
+ .badge{color:#fed136;background-color:#fff}
+ .navbar-custom{
+  background-color:#2d3037;
+  border-color:transparent
+ }
+ .navbar-custom .navbar-brand{
+  color:#fed136;
+  font-family:"Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive
+ }
+ .navbar-custom .navbar-brand.active,
+ .navbar-custom .navbar-brand:active,
+ .navbar-custom .navbar-brand:focus,.navbar-custom .navbar-brand:hover{
+  color:#fec503
+  }
+ .navbar-custom .nav li a,
+ .navbar-custom .navbar-toggle{
+  font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color:white;
+  text-transform:uppercase
+ }
+ .navbar-custom .navbar-collapse{border-color:rgba(255,255,255,.02)}
+ .navbar-custom .navbar-toggle{
+  background-color:#fed136;
+  border-color:#fed136;
+  font-size:12px
+ }
+ .navbar-custom .navbar-toggle:focus,.navbar-custom .navbar-toggle:hover{background-color:#fed136}
+ .navbar-custom .nav li a{
+  font-weight:400;letter-spacing:1px
+  }
+ .navbar-custom .nav li a:focus,
+ .navbar-custom .nav li a:hover{
+  color:#fed136;
+  outline:0
+  }
+ .navbar-custom .navbar-nav>.active>a{
+  border-radius:0;
+  color:#fff;
+  background-color:#fed136
+ }
+ .navbar-custom .navbar-nav>.active>a:focus,
+ .navbar-custom .navbar-nav>.active>a:hover{
+  color:#fff;
+  background-color:#fec503
+  }
+ @media (min-width:768px){
+  .navbar-custom{
+    background-color:#29292b;
+    padding:25px 0;
+    -webkit-transition:padding .3s;
+    -moz-transition:padding .3s;
+    transition:padding .3s;
+    border:none
+    }
+ .navbar-custom .navbar-brand{
+  font-size:2em;
+  -webkit-transition:all .3s;
+  -moz-transition:all .3s;
+  transition:all .3s
+ }
+ .navbar-custom .navbar-nav>.active>a{
+  border-radius:3px
+  }
+ .navbar-custom.affix{
+  background-color:#222;
+  padding:10px 0
+ }
+ .navbar-custom.affix .navbar-brand{font-size:1.5em}}
+ /*headers*/
+ header{
+  background-image: url('fon3.jpg');
+
+  background-repeat:no-repeat;
+  background-attachment:scroll;
+  background-position:center center;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  background-size: cover;
+  -o-background-size:100% 100%;
+  background-size: 100% 100%;
+  border: 1px solid black;
+  text-align:center;color:#fff;
+  }
+ header .intro-text{
+  padding-top:100px;padding-bottom:50px
+  }
+ header .intro-text .intro-lead-in{
+  font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-style:italic;
+  font-size:22px;
+  line-height:22px;
+  margin-bottom:25px
+
+  }
+ header .intro-text .intro-heading{
+  font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform:uppercase;
+  font-weight:700;font-size:50px;
+  line-height:50px;margin-bottom:25px
+  }
+ @media (min-width:768px){
+
+  header .intro-text{
+    padding-top:300px;
+    padding-bottom:200px
+    }
+  header .intro-text .intro-lead-in{
+    font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style:italic;
+    font-size:40px;
+    line-height:40px;
+    margin-bottom:25px
+
+    }
+  header .intro-text .intro-heading{
+    font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform:uppercase;
+    font-weight:700;
+    font-size:75px;
+    line-height:75px;
+    margin-bottom:50px
+    }
+  }
+ #portfolio .portfolio-item .portfolio-caption p,
+ section h3.section-subheading{
+  font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-style:italic
+
+  }
+ section{}
+ section h2.section-heading{
+  font-size:40px;margin-top:0;margin-bottom:15px
+  }
+ section h3.section-subheading{
+  font-size:16px;text-transform:none;
+  font-weight:400;margin-bottom:75px
+
+  }
+ @media (min-width:768px){
+  section{
+    padding:150px 0
+    }
+  }
+ .service-heading{
+  margin:15px 0;
+  text-transform:none
+  }
+#portfolio .portfolio-item{
+  margin:0 0 15px;right:0
+  }
+#portfolio .portfolio-item .portfolio-link{
+  display:block;
+  position:relative;
+  max-width:400px;
+  margin:0 auto
+  }
+#portfolio .portfolio-item .portfolio-link .portfolio-hover{
+  background:rgba(254,209,54,.9);
+  position:absolute;
+  width:100%;
+  height:100%;
+  opacity:0;
+  transition:all ease .5s;
+  -webkit-transition:all ease .5s;
+  -moz-transition:all ease .5s
+  }
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover{
+  opacity:1
+  }
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content{
+  position:absolute;
+  width:100%;
+  height:20px;
+  font-size:20px;
+  text-align:center;
+  top:50%;
+  margin-top:-12px;
+  color:#fff
+  }
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i{
+  margin-top:-12px
+  }
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4{
+  margin:0
+  }
+#portfolio .portfolio-item .portfolio-caption{
+  max-width:400px;
+  margin:0 auto;
+  background-color:#fff;
+  text-align:center;
+  padding:25px
+  }
+#portfolio .portfolio-item .portfolio-caption h4{
+  text-transform:none;
+  margin:0
+  }
+#portfolio .portfolio-item .portfolio-caption p{
+  font-size:16px;
+  margin:0
+  }
+footer span.copyright,
+footer ul.quicklinks{
+  font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif
+  }
+  #portfolio *{
+    z-index:2
+  }
+@media (min-width:767px){
+  #portfolio .portfolio-item{
+    margin:0 0 30px
+    }
+  }
+.timeline{
+  list-style:none;
+  padding:0;
+  position:relative
+  }
+.timeline:before{
+  top:0;
+  bottom:0;
+  position:absolute;
+  content:"";
+  width:2px;
+  background-color:#f1f1f1;
+  left:40px;
+  margin-left:-1.5px
+  }
+.timeline>li{
+  margin-bottom:50px;
+  position:relative;
+  min-height:50px
+  }
+.timeline>li:after,
+.timeline>li:before{
+  content:" ";display:table
+  }
+.timeline>li:after{
+  clear:both
+  }
+.timeline>li 
+.timeline-panel{
+  width:100%;
+  float:right;
+  padding:0 20px 0 100px;
+  position:relative;
+  text-align:left
+  }
+.timeline>li 
+.timeline-panel:before{
+  border-left-width:0;
+  border-right-width:15px;
+  left:-15px;
+  right:auto
+  }
+.timeline>li 
+.timeline-panel:after{
+  border-left-width:0;
+  border-right-width:14px;
+  left:-14px;
+  right:auto
+  }
+.timeline>li 
+.timeline-image{
+  left:0;
+  margin-left:0;
+  width:80px;
+  height:80px;
+  position:absolute;
+  z-index:100;
+  background-color:#fed136;
+  color:#fff;
+  border-radius:100%;
+  border:7px solid #f1f1f1;
+  text-align:center
+  }
+.timeline>li 
+.timeline-image h4{
+  font-size:10px;
+  margin-top:12px;
+  line-height:14px
+  }
+.timeline>li.timeline-inverted>.timeline-panel{
+  float:right;
+  text-align:left;
+  padding:0 20px 0 100px
+  }
+.timeline>li.timeline-inverted>.timeline-panel:before{
+  border-left-width:0;
+  border-right-width:15px;
+  left:-15px;
+  right:auto}
+.timeline>li.timeline-inverted>.timeline-panel:after{
+  border-left-width:0;
+  border-right-width:14px;
+  left:-14px;
+  right:auto
+  }
+.timeline>li:last-child{
+  margin-bottom:0
+  }
+.timeline .timeline-heading h4{
+  margin-top:0;
+  color:inherit
+  }
+.timeline .timeline-heading h4.subheading{
+  text-transform:none
+
+  }
+.timeline .timeline-body>p,.timeline .timeline-body>ul{
+  margin-bottom:0
+
+  }
+@media (min-width:768px){
+  .timeline:before{
+    left:50%
+    }
+  .timeline>li{
+    margin-bottom:100px;
+    min-height:100px
+    }
+  .timeline>li .timeline-panel{
+    width:41%;
+    float:left;
+    padding:0 20px 20px 30px;
+    text-align:right
+    }
+  .timeline>li .timeline-image{
+    width:100px;
+    height:100px;
+    left:50%;
+    margin-left:-50px
+    }
+  .timeline>li .timeline-image h4{
+    font-size:13px;
+    margin-top:16px;
+    line-height:18px
+    }
+  .timeline>li.timeline-inverted>.timeline-panel{
+    float:right;
+    text-align:left;
+    padding:0 30px 20px 20px
+    }
+  }
+@media (min-width:992px){
+  .timeline>li .timeline-panel,.timeline>li.timeline-inverted>.timeline-panel{
+    padding:0 20px 20px
+    }
+  .timeline>li{
+    min-height:150px
+    }
+  .timeline>li .timeline-image{
+    width:150px;
+    height:150px;
+    margin-left:-75px
+    }
+  .timeline>li .timeline-image h4{
+    font-size:18px;
+    margin-top:30px;
+    line-height:26px
+    }
+  }
+@media (min-width:1200px){
+  .timeline>li{
+    min-height:170px
+    }
+  .timeline>li .timeline-panel{
+    padding:0 20px 20px 100px
+    }
+  .timeline>li .timeline-image{
+    width:170px;
+    height:170px;
+    margin-left:-85px
+    }
+  .timeline>li .timeline-image h4{
+    margin-top:40px
+    }
+  .timeline>li.timeline-inverted>.timeline-panel{
+    padding:0 100px 20px 20px
+    }
+  }
+.team-member{
+  text-align:center;
+  margin-bottom:50px
+  }
+.team-member img{
+  margin:0 auto;
+  border:7px solid #fff
+  }
+.team-member h4{
+  margin-top:25px;
+  margin-bottom:0;
+  text-transform:none
+  }
+.team-member p{
+  margin-top:0
+  }
+aside.clients img{
+  margin:50px auto
+  }
+.map {
+    height: auto;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: auto;
+    }
+}
+
+.map iframe {
+    pointer-events: none;
+}
+
+footer{
+  padding:100px 0;
+  text-align:right
+  }
+footer span.copyright{
+  line-height:40px;
+  text-transform:uppercase;
+  text-transform:none
+  }
+footer ul.quicklinks{
+  margin-bottom:0;
+  line-height:40px;
+  text-transform:uppercase;
+  text-transform:none
+  }
+ul.social-buttons{
+  margin-bottom:0
+  }
+ul.social-buttons li a{
+  display:block;
+  background-color:#222;
+  height:40px;
+  width:40px;
+  border-radius:100%;
+  font-size:20px;
+  line-height:40px;
+  color:#fff;
+  outline:0;-webkit-transition:all .3s;
+  -moz-transition:all .3s;
+  transition:all .3s
+  }
+ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li a:hover{
+  background-color:#fed136
+  }
+.btn.active,.btn:active,.btn:active:focus,.btn:focus{
+  outline:0
+  }
+.portfolio-modal .modal-dialog{
+  margin:0;height:100%;width:auto
+  }
+.portfolio-modal .modal-content{
+  border-radius:0;
+  background-clip:border-box;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  border:none;
+  min-height:100%;
+  padding:100px 0;
+  text-align:center
+  }
+.portfolio-modal .modal-content h2{
+  margin-bottom:15px;
+  font-size:3em
+  }
+.portfolio-modal .modal-content p{
+  margin-bottom:30px
+  }
+.portfolio-modal .modal-content p.item-intro{
+  margin:20px 0 30px;
+  font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-style:italic;
+  font-size:16px
+  }
+.portfolio-modal .modal-content ul.list-inline{
+  margin-bottom:30px;
+  margin-top:0
+  }
+.portfolio-modal .modal-content img{
+  margin-bottom:30px
+  }
+.portfolio-modal .close-modal{
+  position:absolute;
+  width:75px;
+  height:75px;
+  background-color:transparent;
+  top:25px;
+  right:25px;
+  cursor:pointer
+  }
+.portfolio-modal .close-modal:hover{
+  opacity:.3
+  }
+.portfolio-modal .close-modal .lr{
+  height:75px;
+  width:1px;
+  margin-left:35px;
+  background-color:#222;
+  transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+  z-index:1051
+  }
+.portfolio-modal .close-modal .lr .rl{
+  height:75px;
+  width:1px;
+  background-color:#222;
+  transform:rotate(90deg);
+  -ms-transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+  z-index:1052
+  }
+.portfolio-modal .modal-backdrop{
+  opacity:0;
+  display:none
+  }
+::-moz-selection{
+  text-shadow:none;background:#fed136
+  }
+::selection{
+  text-shadow:none;
+  background:#fed136
+  }
+img::selection{
+  background:0 0
+  }
+img::-moz-selection{
+  background:0 0
+}
+/* Map */
+
+.map {
+
+    height: 800px;
+    width: 1000px;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+
+.map iframe {
+    pointer-events: none;
+}
+
+
+#mainwrap{
+  overflow: hidden;
+  
+}
+#sidebar{
+  float: left;
+  width: 50%;
+  
+
+
+  /*
+  background-image: url('fon4.jpg');
+  background-repeat:no-repeat;
+  background-attachment:scroll;
+  background-position:center center;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  
+  -o-background-size:cover;
+  background-size:cover;
+  */
+  image-rendering: auto;
+
+
+}
+#content-wrap{
+  float:right;
+  width: 40%
+
+  
+
+}
+h5{
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 150%;
+  font-style: normal;
+  font-weight: 100;
+  color: gray;
+
+}
+/*!
+ * Start Bootstrap - Agency v3.3.7+1 (http://startbootstrap.com/template-overviews/agency)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+.btn-primary.active,
+ .btn-primary:active,
+ .btn-xl.active,
+ .btn-xl:active,
+ .open .dropdown-toggle.btn-primary,
+ .open .dropdown-toggle.btn-xl{
+ 	background-image:none
+ }
+ body{
+ 	overflow-x:hidden;
+ 	font-family:"Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+ 	webkit-tap-highlight-color:#fed136
+ 	height: 100%;
+
+ 	
+ 	}
+ .btn-primary,.btn-xl,h1,h2,h3,h4,h5,h6{
+ 	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700
+ 	}
+ .text-muted{color:white;font-size:18px;}
+ .text-primary,a{color:#fed136}p{font-size:14px;line-height:1.75}p
+ .large{font-size:16px}a,a.active,a:active,a:focus,a:hover{outline:0}a
+ .active,a:active,a:focus,a:hover{color:#fec503}
+ .img-centered{
+ 	margin:0 auto
+ }
+ .bg-light-gray{
+ 	background-color:#ccced1;
+ }
+ .bg-darkest-gray{
+ 	background-color:#222
+ }
+ .btn-primary{
+ 	color:#fff;
+ 	background-color:#fed136;
+ 	border-color:#fed136
+ }
+ .btn-primary.active,
+ .btn-primary:active,
+ .btn-primary:focus,
+ .btn-primary:hover,
+ .open .dropdown-toggle.btn-primary{color:#fff;background-color:#fec503;border-color:#f6bf01}
+ .btn-primary.disabled,
+ .btn-primary.disabled.active,
+ .btn-primary.disabled:active,
+ .btn-primary.disabled:focus,
+ .btn-primary.disabled:hover,
+ .btn-primary[disabled],
+ .btn-primary[disabled].active,
+ .btn-primary[disabled]:active,
+ .btn-primary[disabled]:focus,
+ .btn-primary[disabled]:hover,fieldset[disabled] 
+ .btn-primary,fieldset[disabled] 
+ .btn-primary.active,fieldset[disabled] 
+ .btn-primary:active,fieldset[disabled] 
+ .btn-primary:focus,fieldset[disabled] 
+ .btn-primary:hover{background-color:#fed136;border-color:#fed136}
+ .btn-primary .badge{color:#fed136;background-color:#fff}
+ .btn-xl{color:#fff;background-color:#fed136;border-color:#fed136;border-radius:3px;font-size:18px;padding:20px 40px}
+ .btn-xl.active,
+ .btn-xl:active,
+ .btn-xl:focus,.btn-xl:hover,.open .dropdown-toggle.btn-xl{color:#fff;background-color:#fec503;border-color:#f6bf01}
+ .btn-xl.disabled,.btn-xl.disabled.active,
+ .btn-xl.disabled:active,.btn-xl.disabled:focus,
+ .btn-xl.disabled:hover,.btn-xl[disabled],
+ .btn-xl[disabled].active,.btn-xl[disabled]:active,
+ .btn-xl[disabled]:focus,.btn-xl[disabled]:hover,fieldset[disabled] 
+ .btn-xl,fieldset[disabled] .btn-xl.active,fieldset[disabled] 
+ .btn-xl:active,fieldset[disabled] .btn-xl:focus,fieldset[disabled] 
+ .btn-xl:hover{background-color:#fed136;border-color:#fed136}.btn-xl 
+ .badge{color:#fed136;background-color:#fff}
+ .navbar-custom{
+ 	background-color:#2d3037; /*no cambios*/
+ 	border-color:transparent
+
+ }
+ .navbar-custom .navbar-brand{
+ 	color:#fed136;
+ 	font-family:"Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive
+ }
+ .navbar-custom .navbar-brand.active,
+ .navbar-custom .navbar-brand:active,
+ .navbar-custom .navbar-brand:focus,.navbar-custom .navbar-brand:hover{
+ 	color:#fec503
+ 	}
+ .navbar-custom .nav li a,
+ .navbar-custom .navbar-toggle{
+ 	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+ 	color:white;
+ 	text-transform:uppercase
+ 	background-color:#2d3037;
+ }
+ .navbar-custom .navbar-collapse{border-color:rgba(255,255,255,.02)}
+ .navbar-custom .navbar-toggle{
+ 	background-color:#fed136;
+ 	border-color:#fed136;
+ 	font-size:12px
+ }
+ .navbar-custom .navbar-toggle:focus,.navbar-custom .navbar-toggle:hover{background-color:#fed136}
+ .navbar-custom .nav li a{
+ 	font-weight:400;letter-spacing:1px
+ 	}
+ .navbar-custom .nav li a:focus,
+ .navbar-custom .nav li a:hover{
+ 	color:#fed136;
+ 	outline:0
+ 	}
+ .navbar-custom .navbar-nav>.active>a{
+ 	border-radius:0;
+ 	color:#fff;
+ 	background-color:#fed136
+ }
+ .navbar-custom .navbar-nav>.active>a:focus,
+ .navbar-custom .navbar-nav>.active>a:hover{
+ 	color:#fff;
+ 	background-color:#fec503
+ 	}
+ @media (min-width:768px){
+ 	.navbar-custom{
+ 		background-color:#29292b;
+ 		padding:25px 0;
+ 		-webkit-transition:padding .3s;
+ 		-moz-transition:padding .3s;
+ 		transition:padding .3s;
+ 		border:none
+ 		}
+ .navbar-custom .navbar-brand{
+ 	font-size:2em;
+ 	-webkit-transition:all .3s;
+ 	-moz-transition:all .3s;
+ 	transition:all .3s
+ }
+ .navbar-custom .navbar-nav>.active>a{
+ 	border-radius:3px
+ 	}
+ .navbar-custom.affix{
+ 	background-color:#222;
+ 	padding:10px 0
+ }
+ .navbar-custom.affix .navbar-brand{font-size:1.5em}}
+ /*headers*/
+ header{
+ 	background-image: url('fon3.jpg');
+
+ 	background-repeat:no-repeat;
+ 	background-attachment:scroll;
+ 	background-position:center center;
+ 	-webkit-background-size:cover;
+ 	-moz-background-size:cover;
+ 	background-size: cover;
+ 	-o-background-size:100% 100%;
+ 	background-size: 100% 100%;
+ 	border: 1px solid black;
+ 	text-align:center;color:#fff;
+ 	}
+ header .intro-text{
+ 	padding-top:100px;padding-bottom:50px
+ 	}
+ header .intro-text .intro-lead-in{
+ 	font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+ 	font-style:italic;
+ 	font-size:22px;
+ 	line-height:22px;
+ 	margin-bottom:25px
+
+ 	}
+ header .intro-text .intro-heading{
+ 	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+ 	text-transform:uppercase;
+ 	font-weight:700;font-size:50px;
+ 	line-height:50px;margin-bottom:25px
+ 	}
+ @media (min-width:768px){
+
+ 	header .intro-text{
+ 		padding-top:300px;
+ 		padding-bottom:200px
+ 		}
+ 	header .intro-text .intro-lead-in{
+ 		font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+ 		font-style:italic;
+ 		font-size:40px;
+ 		line-height:40px;
+ 		margin-bottom:25px
+
+ 		}
+ 	header .intro-text .intro-heading{
+ 		font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+ 		text-transform:uppercase;
+ 		font-weight:700;
+ 		font-size:75px;
+ 		line-height:75px;
+ 		margin-bottom:50px
+ 		}
+ 	}
+ #portfolio .portfolio-item .portfolio-caption p,
+ section h3.section-subheading{
+ 	font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+ 	font-style:italic
+
+ 	}
+ section{}
+ section h2.section-heading{
+ 	font-size:40px;margin-top:0;margin-bottom:15px
+ 	}
+ section h3.section-subheading{
+ 	font-size:16px;text-transform:none;
+ 	font-weight:400;margin-bottom:75px
+
+ 	}
+ @media (min-width:768px){
+ 	section{
+ 		padding:150px 0
+ 		}
+ 	}
+ .service-heading{
+ 	margin:15px 0;
+ 	text-transform:none
+ 	}
+#portfolio .portfolio-item{
+	margin:0 0 15px;right:0
+	}
+#portfolio .portfolio-item .portfolio-link{
+	display:block;
+	position:relative;
+	max-width:400px;
+	margin:0 auto
+	}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover{
+	background:rgba(254,209,54,.9);
+	position:absolute;
+	width:100%;
+	height:100%;
+	opacity:0;
+	transition:all ease .5s;
+	-webkit-transition:all ease .5s;
+	-moz-transition:all ease .5s
+	}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover{
+	opacity:1
+	}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content{
+	position:absolute;
+	width:100%;
+	height:20px;
+	font-size:20px;
+	text-align:center;
+	top:50%;
+	margin-top:-12px;
+	color:#fff
+	}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i{
+	margin-top:-12px
+	}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4{
+	margin:0
+	}
+#portfolio .portfolio-item .portfolio-caption{
+	max-width:400px;
+	margin:0 auto;
+	background-color:#fff;
+	text-align:center;
+	padding:25px
+	}
+#portfolio .portfolio-item .portfolio-caption h4{
+	text-transform:none;
+	margin:0
+	}
+#portfolio .portfolio-item .portfolio-caption p{
+	font-size:16px;
+	margin:0
+	}
+footer span.copyright,
+footer ul.quicklinks{
+	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif
+	}
+	#portfolio *{
+		z-index:2
+	}
+@media (min-width:767px){
+	#portfolio .portfolio-item{
+		margin:0 0 30px
+		}
+	}
+.timeline{
+	list-style:none;
+	padding:0;
+	position:relative
+	}
+.timeline:before{
+	top:0;
+	bottom:0;
+	position:absolute;
+	content:"";
+	width:2px;
+	background-color:#f1f1f1;
+	left:40px;
+	margin-left:-1.5px
+	}
+.timeline>li{
+	margin-bottom:50px;
+	position:relative;
+	min-height:50px
+	}
+.timeline>li:after,
+.timeline>li:before{
+	content:" ";display:table
+	}
+.timeline>li:after{
+	clear:both
+	}
+.timeline>li 
+.timeline-panel{
+	width:100%;
+	float:right;
+	padding:0 20px 0 100px;
+	position:relative;
+	text-align:left
+	}
+.timeline>li 
+.timeline-panel:before{
+	border-left-width:0;
+	border-right-width:15px;
+	left:-15px;
+	right:auto
+	}
+.timeline>li 
+.timeline-panel:after{
+	border-left-width:0;
+	border-right-width:14px;
+	left:-14px;
+	right:auto
+	}
+.timeline>li 
+.timeline-image{
+	left:0;
+	margin-left:0;
+	width:80px;
+	height:80px;
+	position:absolute;
+	z-index:100;
+	background-color:#fed136;
+	color:#fff;
+	border-radius:100%;
+	border:7px solid #f1f1f1;
+	text-align:center
+	}
+.timeline>li 
+.timeline-image h4{
+	font-size:10px;
+	margin-top:12px;
+	line-height:14px
+	}
+.timeline>li.timeline-inverted>.timeline-panel{
+	float:right;
+	text-align:left;
+	padding:0 20px 0 100px
+	}
+.timeline>li.timeline-inverted>.timeline-panel:before{
+	border-left-width:0;
+	border-right-width:15px;
+	left:-15px;
+	right:auto}
+.timeline>li.timeline-inverted>.timeline-panel:after{
+	border-left-width:0;
+	border-right-width:14px;
+	left:-14px;
+	right:auto
+	}
+.timeline>li:last-child{
+	margin-bottom:0
+	}
+.timeline .timeline-heading h4{
+	margin-top:0;
+	color:inherit
+	}
+.timeline .timeline-heading h4.subheading{
+	text-transform:none
+
+	}
+.timeline .timeline-body>p,.timeline .timeline-body>ul{
+	margin-bottom:0
+
+	}
+@media (min-width:768px){
+	.timeline:before{
+		left:50%
+		}
+	.timeline>li{
+		margin-bottom:100px;
+		min-height:100px
+		}
+	.timeline>li .timeline-panel{
+		width:41%;
+		float:left;
+		padding:0 20px 20px 30px;
+		text-align:right
+		}
+	.timeline>li .timeline-image{
+		width:100px;
+		height:100px;
+		left:50%;
+		margin-left:-50px
+		}
+	.timeline>li .timeline-image h4{
+		font-size:13px;
+		margin-top:16px;
+		line-height:18px
+		}
+	.timeline>li.timeline-inverted>.timeline-panel{
+		float:right;
+		text-align:left;
+		padding:0 30px 20px 20px
+		}
+	}
+@media (min-width:992px){
+	.timeline>li .timeline-panel,.timeline>li.timeline-inverted>.timeline-panel{
+		padding:0 20px 20px
+		}
+	.timeline>li{
+		min-height:150px
+		}
+	.timeline>li .timeline-image{
+		width:150px;
+		height:150px;
+		margin-left:-75px
+		}
+	.timeline>li .timeline-image h4{
+		font-size:18px;
+		margin-top:30px;
+		line-height:26px
+		}
+	}
+@media (min-width:1200px){
+	.timeline>li{
+		min-height:170px
+		}
+	.timeline>li .timeline-panel{
+		padding:0 20px 20px 100px
+		}
+	.timeline>li .timeline-image{
+		width:170px;
+		height:170px;
+		margin-left:-85px
+		}
+	.timeline>li .timeline-image h4{
+		margin-top:40px
+		}
+	.timeline>li.timeline-inverted>.timeline-panel{
+		padding:0 100px 20px 20px
+		}
+	}
+.team-member{
+	text-align:center;
+	margin-bottom:50px
+	}
+.team-member img{
+	margin:0 auto;
+	border:7px solid #fff
+	}
+.team-member h4{
+	margin-top:25px;
+	margin-bottom:0;
+	text-transform:none
+	}
+.team-member p{
+	margin-top:0
+	}
+aside.clients img{
+	margin:50px auto
+	}
+.map {
+    height: auto;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: auto;
+    }
+}
+
+.map iframe {
+    pointer-events: none;
+}
+
+footer{
+	padding:100px 0;
+	text-align:right
+	}
+footer span.copyright{
+	line-height:40px;
+	text-transform:uppercase;
+	text-transform:none
+	}
+footer ul.quicklinks{
+	margin-bottom:0;
+	line-height:40px;
+	text-transform:uppercase;
+	text-transform:none
+	}
+ul.social-buttons{
+	margin-bottom:0
+	}
+ul.social-buttons li a{
+	display:block;
+	background-color:#222;
+	height:40px;
+	width:40px;
+	border-radius:100%;
+	font-size:20px;
+	line-height:40px;
+	color:#fff;
+	outline:0;-webkit-transition:all .3s;
+	-moz-transition:all .3s;
+	transition:all .3s
+	}
+ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li a:hover{
+	background-color:#fed136
+	}
+.btn.active,.btn:active,.btn:active:focus,.btn:focus{
+	outline:0
+	}
+.portfolio-modal .modal-dialog{
+	margin:0;height:100%;width:auto
+	}
+.portfolio-modal .modal-content{
+	border-radius:0;
+	background-clip:border-box;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	border:none;
+	min-height:100%;
+	padding:100px 0;
+	text-align:center
+	}
+.portfolio-modal .modal-content h2{
+	margin-bottom:15px;
+	font-size:3em
+	}
+.portfolio-modal .modal-content p{
+	margin-bottom:30px
+	}
+.portfolio-modal .modal-content p.item-intro{
+	margin:20px 0 30px;
+	font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-style:italic;
+	font-size:16px
+	}
+.portfolio-modal .modal-content ul.list-inline{
+	margin-bottom:30px;
+	margin-top:0
+	}
+.portfolio-modal .modal-content img{
+	margin-bottom:30px
+	}
+.portfolio-modal .close-modal{
+	position:absolute;
+	width:75px;
+	height:75px;
+	background-color:transparent;
+	top:25px;
+	right:25px;
+	cursor:pointer
+	}
+.portfolio-modal .close-modal:hover{
+	opacity:.3
+	}
+.portfolio-modal .close-modal .lr{
+	height:75px;
+	width:1px;
+	margin-left:35px;
+	background-color:#222;
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	z-index:1051
+	}
+.portfolio-modal .close-modal .lr .rl{
+	height:75px;
+	width:1px;
+	background-color:#222;
+	transform:rotate(90deg);
+	-ms-transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+	z-index:1052
+	}
+.portfolio-modal .modal-backdrop{
+	opacity:0;
+	display:none
+	}
+::-moz-selection{
+	text-shadow:none;background:#fed136
+	}
+::selection{
+	text-shadow:none;
+	background:#fed136
+	}
+img::selection{
+	background:0 0
+	}
+img::-moz-selection{
+	background:0 0
+}
+/* Map */
+
+.map {
+
+    height: 800px;
+    width: 1000px;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+
+.map iframe {
+    pointer-events: none;
+}
+
+
+#mainwrap{
+	overflow: hidden;
+	
+}
+#sidebar{
+	float: left;
+	width: 50%;
+	
+
+
+	/*
+	background-image: url('fon4.jpg');
+	background-repeat:no-repeat;
+ 	background-attachment:scroll;
+ 	background-position:center center;
+ 	-webkit-background-size:cover;
+ 	-moz-background-size:cover;
+ 	
+ 	-o-background-size:cover;
+ 	background-size:cover;
+	*/
+	image-rendering: auto;
+
+
+}
+#content-wrap{
+	float:right;
+	width: 40%
+
+	
+
+}
+h5{
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size: 150%;
+	font-style: normal;
+	font-weight: 100;
+	color: gray;
+
+}
+/* line 6, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+body {
+  overflow-x: hidden;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 11, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.text-muted {
+  color: #777777;
+}
+
+/* line 15, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.text-primary {
+  color: #fed136;
+}
+
+/* line 19, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+p {
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* line 24, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+p.large {
+  font-size: 16px;
+}
+
+/* line 28, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  outline: none;
+}
+
+/* line 36, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+a {
+  color: #fed136;
+}
+
+/* line 40, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #fec503;
+}
+
+/* line 47, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* line 52, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.img-centered {
+  margin: 0 auto;
+}
+
+/* line 56, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.bg-light-gray {
+  background-color: #eeeeee;
+}
+
+/* line 60, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.bg-darkest-gray {
+  background-color: #222222;
+}
+
+/* line 66, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.btn-primary {
+  color: white;
+  background-color: #fed136;
+  border-color: #fed136;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* line 10, /Users/abel/Documents/apps/real/app/assets/stylesheets/_mixins.scss */
+.btn-primary:focus, .btn-primary.focus {
+  color: white;
+  background-color: #fec503;
+  border-color: #b48b01;
+}
+/* line 16, /Users/abel/Documents/apps/real/app/assets/stylesheets/_mixins.scss */
+.btn-primary:hover {
+  color: white;
+  background-color: #fec503;
+  border-color: #f6bf01;
+}
+/* line 21, /Users/abel/Documents/apps/real/app/assets/stylesheets/_mixins.scss */
+.btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+  color: white;
+  background-color: #fec503;
+  border-color: #f6bf01;
+}
+/* line 28, /Users/abel/Documents/apps/real/app/assets/stylesheets/_mixins.scss */
+.btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus {
+  color: white;
+  background-color: #dcab01;
+  border-color: #b48b01;
+}
+/* line 36, /Users/abel/Documents/apps/real/app/assets/stylesheets/_mixins.scss */
+.btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+  background-image: none;
+}
+/* line 44, /Users/abel/Documents/apps/real/app/assets/stylesheets/_mixins.scss */
+.btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus {
+  background-color: #fed136;
+  border-color: #fed136;
+}
+/* line 52, /Users/abel/Documents/apps/real/app/assets/stylesheets/_mixins.scss */
+.btn-primary .badge {
+  color: #fed136;
+  background-color: white;
+}
+
+/* line 72, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.btn-xl {
+  color: white;
+  background-color: #fed136;
+  border-color: #fed136;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 20px 40px;
+}
+/* line 10, /Users/abel/Documents/apps/real/app/assets/stylesheets/_mixins.scss */
+.btn-xl:focus, .btn-xl.focus {
+  color: white;
+  background-color: #fec503;
+  border-color: #b48b01;
+}
+/* line 16, /Users/abel/Documents/apps/real/app/assets/stylesheets/_mixins.scss */
+.btn-xl:hover {
+  color: white;
+  background-color: #fec503;
+  border-color: #f6bf01;
+}
+/* line 21, /Users/abel/Documents/apps/real/app/assets/stylesheets/_mixins.scss */
+.btn-xl:active, .btn-xl.active, .open > .btn-xl.dropdown-toggle {
+  color: white;
+  background-color: #fec503;
+  border-color: #f6bf01;
+}
+/* line 28, /Users/abel/Documents/apps/real/app/assets/stylesheets/_mixins.scss */
+.btn-xl:active:hover, .btn-xl:active:focus, .btn-xl:active.focus, .btn-xl.active:hover, .btn-xl.active:focus, .btn-xl.active.focus, .open > .btn-xl.dropdown-toggle:hover, .open > .btn-xl.dropdown-toggle:focus, .open > .btn-xl.dropdown-toggle.focus {
+  color: white;
+  background-color: #dcab01;
+  border-color: #b48b01;
+}
+/* line 36, /Users/abel/Documents/apps/real/app/assets/stylesheets/_mixins.scss */
+.btn-xl:active, .btn-xl.active, .open > .btn-xl.dropdown-toggle {
+  background-image: none;
+}
+/* line 44, /Users/abel/Documents/apps/real/app/assets/stylesheets/_mixins.scss */
+.btn-xl.disabled:hover, .btn-xl.disabled:focus, .btn-xl.disabled.focus, .btn-xl[disabled]:hover, .btn-xl[disabled]:focus, .btn-xl[disabled].focus, fieldset[disabled] .btn-xl:hover, fieldset[disabled] .btn-xl:focus, fieldset[disabled] .btn-xl.focus {
+  background-color: #fed136;
+  border-color: #fed136;
+}
+/* line 52, /Users/abel/Documents/apps/real/app/assets/stylesheets/_mixins.scss */
+.btn-xl .badge {
+  color: #fed136;
+  background-color: white;
+}
+
+/* line 83, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.navbar-custom {
+  background-color: transparent;
+  border-color: transparent;
+}
+/* line 86, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.navbar-custom .navbar-brand {
+  color: #fed136;
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+}
+/* line 89, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.navbar-custom .navbar-brand:hover, .navbar-custom .navbar-brand:focus, .navbar-custom .navbar-brand:active, .navbar-custom .navbar-brand.active {
+  color: #fec503;
+}
+/* line 96, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.navbar-custom .navbar-collapse {
+  border-color: rgba(255, 255, 255, 0.98);
+}
+/* line 99, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.navbar-custom .navbar-toggle {
+  background-color: #fed136;
+  border-color: #fed136;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 12px;
+}
+/* line 105, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.navbar-custom .navbar-toggle:hover, .navbar-custom .navbar-toggle:focus {
+  background-color: #fed136;
+}
+/* line 112, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.navbar-custom .nav li a {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: white;
+}
+/* line 117, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus {
+  color: #fed136;
+  outline: none;
+}
+/* line 125, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.navbar-custom .navbar-nav > .active > a {
+  border-radius: 0;
+  color: white;
+  background-color: #fed136;
+}
+/* line 130, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: white;
+  background-color: #fec503;
+}
+
+@media (min-width: 768px) {
+  /* line 138, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  .navbar-custom {
+    background-color: transparent;
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+    border: none;
+  }
+  /* line 145, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  .navbar-custom .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  /* line 151, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  .navbar-custom .navbar-nav > .active > a {
+    border-radius: 3px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 160, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  .navbar-custom.affix {
+    background-color: #222222;
+    padding: 10px 0;
+  }
+  /* line 163, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  .navbar-custom.affix .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+/* line 169, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+header {
+  background-image: url("fon3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: white;
+}
+/* line 177, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+header .intro-text {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+/* line 180, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+header .intro-text .intro-lead-in {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+/* line 187, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+header .intro-text .intro-heading {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+  /* line 199, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  header .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px;
+  }
+  /* line 202, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  header .intro-text .intro-lead-in {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+  /* line 209, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  header .intro-text .intro-heading {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 75px;
+    margin-bottom: 50px;
+  }
+}
+/* line 222, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+section {
+  padding: 100px 0;
+}
+/* line 224, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+section h2.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+/* line 229, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+section h3.section-subheading {
+  font-size: 16px;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 75px;
+}
+
+@media (min-width: 768px) {
+  /* line 240, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  section {
+    padding: 150px 0;
+  }
+}
+/* line 247, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+
+/* line 255, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+#portfolio .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+/* line 258, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+/* line 263, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  background: rgba(254, 209, 54, 0.1);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+/* line 272, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 1;
+}
+/* line 275, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+/* line 284, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px;
+}
+/* line 287, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+  margin: 0;
+}
+/* line 294, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+#portfolio .portfolio-item .portfolio-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  padding: 25px;
+}
+/* line 300, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+#portfolio .portfolio-item .portfolio-caption h4 {
+  text-transform: none;
+  margin: 0;
+}
+/* line 304, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+#portfolio .portfolio-item .portfolio-caption p {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  margin: 0;
+}
+/* line 312, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+#portfolio * {
+  z-index: 2;
+}
+
+@media (min-width: 767px) {
+  /* line 319, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+/* line 327, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+/* line 331, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: "";
+  width: 2px;
+  background-color: #f1f1f1;
+  left: 40px;
+  margin-left: -1.5px;
+}
+/* line 341, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.timeline > li {
+  margin-bottom: 50px;
+  position: relative;
+  min-height: 50px;
+}
+/* line 345, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.timeline > li:before, .timeline > li:after {
+  content: " ";
+  display: table;
+}
+/* line 350, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.timeline > li:after {
+  clear: both;
+}
+/* line 353, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.timeline > li .timeline-panel {
+  width: 100%;
+  float: right;
+  padding: 0 20px 0 100px;
+  position: relative;
+  text-align: left;
+}
+/* line 359, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.timeline > li .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+/* line 365, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.timeline > li .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+/* line 372, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.timeline > li .timeline-image {
+  left: 0;
+  margin-left: 0;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 100;
+  background-color: #fed136;
+  color: white;
+  border-radius: 100%;
+  border: 7px solid #f1f1f1;
+  text-align: center;
+}
+/* line 384, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.timeline > li .timeline-image h4 {
+  font-size: 10px;
+  margin-top: 12px;
+  line-height: 14px;
+}
+/* line 390, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+  text-align: left;
+  padding: 0 20px 0 100px;
+}
+/* line 394, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+/* line 400, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+/* line 407, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.timeline > li:last-child {
+  margin-bottom: 0;
+}
+/* line 412, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.timeline .timeline-heading h4 {
+  margin-top: 0;
+  color: inherit;
+}
+/* line 415, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.timeline .timeline-heading h4.subheading {
+  text-transform: none;
+}
+/* line 421, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.timeline .timeline-body > p,
+.timeline .timeline-body > ul {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  /* line 430, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  .timeline:before {
+    left: 50%;
+  }
+  /* line 433, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  .timeline > li {
+    margin-bottom: 100px;
+    min-height: 100px;
+  }
+  /* line 436, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  .timeline > li .timeline-panel {
+    width: 41%;
+    float: left;
+    padding: 0 20px 20px 30px;
+    text-align: right;
+  }
+  /* line 442, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  .timeline > li .timeline-image {
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    margin-left: -50px;
+  }
+  /* line 447, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  .timeline > li .timeline-image h4 {
+    font-size: 13px;
+    margin-top: 16px;
+    line-height: 18px;
+  }
+  /* line 453, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  .timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+    text-align: left;
+    padding: 0 30px 20px 20px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 464, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  .timeline > li {
+    min-height: 150px;
+  }
+  /* line 466, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px;
+  }
+  /* line 469, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  .timeline > li .timeline-image {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+  }
+  /* line 473, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  .timeline > li .timeline-image h4 {
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 26px;
+  }
+  /* line 479, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 20px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 488, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  .timeline > li {
+    min-height: 170px;
+  }
+  /* line 490, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px 100px;
+  }
+  /* line 493, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  .timeline > li .timeline-image {
+    width: 170px;
+    height: 170px;
+    margin-left: -85px;
+  }
+  /* line 497, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  .timeline > li .timeline-image h4 {
+    margin-top: 40px;
+  }
+  /* line 501, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 100px 20px 20px;
+  }
+}
+/* line 510, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.team-member {
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* line 513, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.team-member img {
+  margin: 0 auto;
+  border: 7px solid white;
+}
+/* line 517, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+/* line 522, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.team-member p {
+  margin-top: 0;
+}
+
+/* line 530, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+aside.clients img {
+  margin: 50px auto;
+}
+
+/* line 537, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+section#contact {
+  background-color: #222222;
+  background-image: url("../img/map-image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* line 542, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+section#contact .section-heading {
+  color: white;
+}
+/* line 545, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+section#contact .form-group {
+  margin-bottom: 25px;
+}
+/* line 547, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+section#contact .form-group input,
+section#contact .form-group textarea {
+  padding: 20px;
+}
+/* line 551, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+section#contact .form-group input.form-control {
+  height: auto;
+}
+/* line 554, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+section#contact .form-group textarea.form-control {
+  height: 236px;
+}
+/* line 558, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+section#contact .form-control:focus {
+  border-color: #fed136;
+  box-shadow: none;
+}
+/* line 562, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+section#contact ::-webkit-input-placeholder {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #eeeeee;
+}
+/* line 567, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+section#contact :-moz-placeholder {
+  /* Firefox 18- */
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #eeeeee;
+}
+/* line 572, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+section#contact ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #eeeeee;
+}
+/* line 577, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+section#contact :-ms-input-placeholder {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #eeeeee;
+}
+/* line 582, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+section#contact .text-danger {
+  color: #e74c3c;
+}
+
+/* line 589, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+footer {
+  padding: 25px 0;
+  text-align: center;
+}
+/* line 592, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+footer span.copyright {
+  line-height: 40px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-transform: none;
+}
+/* line 597, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+footer ul.quicklinks {
+  margin-bottom: 0;
+  line-height: 40px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-transform: none;
+}
+
+/* line 607, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+ul.social-buttons {
+  margin-bottom: 0;
+}
+/* line 610, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+ul.social-buttons li a {
+  display: block;
+  background-color: #222222;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 623, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active {
+  background-color: #fed136;
+}
+
+/* line 632, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+  outline: none;
+}
+
+/* line 640, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.portfolio-modal .modal-dialog {
+  margin: 0;
+  height: 100%;
+  width: auto;
+}
+/* line 645, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.portfolio-modal .modal-content {
+  border-radius: 0;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  min-height: 100%;
+  padding: 100px 0;
+  text-align: center;
+}
+/* line 654, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.portfolio-modal .modal-content h2 {
+  margin-bottom: 15px;
+  font-size: 3em;
+}
+/* line 658, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.portfolio-modal .modal-content p {
+  margin-bottom: 30px;
+}
+/* line 661, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.portfolio-modal .modal-content p.item-intro {
+  margin: 20px 0 30px;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+}
+/* line 667, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.portfolio-modal .modal-content ul.list-inline {
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+/* line 671, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.portfolio-modal .modal-content img {
+  margin-bottom: 30px;
+}
+/* line 675, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.portfolio-modal .close-modal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+/* line 683, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.portfolio-modal .close-modal:hover {
+  opacity: 0.3;
+}
+/* line 686, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.portfolio-modal .close-modal .lr {
+  height: 75px;
+  width: 1px;
+  margin-left: 35px;
+  background-color: #222222;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari and Chrome */
+  z-index: 1051;
+}
+/* line 697, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.portfolio-modal .close-modal .lr .rl {
+  height: 75px;
+  width: 1px;
+  background-color: #222222;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Safari and Chrome */
+  z-index: 1052;
+}
+/* line 710, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+.portfolio-modal .modal-backdrop {
+  opacity: 0;
+  display: none;
+}
+
+/* line 718, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+::-moz-selection {
+  text-shadow: none;
+  background: #fed136;
+}
+
+/* line 723, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+::selection {
+  text-shadow: none;
+  background: #fed136;
+}
+
+/* line 728, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+img::selection {
+  background: transparent;
+}
+
+/* line 732, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+img::-moz-selection {
+  background: transparent;
+}
+
+/* line 736, /Users/abel/Documents/apps/real/app/assets/stylesheets/agency.scss */
+body {
+  webkit-tap-highlight-color: #fed136;
+}
+/* line 1, /Users/abel/Documents/apps/real/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /Users/abel/Documents/apps/real/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /Users/abel/Documents/apps/real/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /Users/abel/Documents/apps/real/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /Users/abel/Documents/apps/real/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /Users/abel/Documents/apps/real/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/abel/Documents/apps/real/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /Users/abel/Documents/apps/real/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /Users/abel/Documents/apps/real/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /Users/abel/Documents/apps/real/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /Users/abel/Documents/apps/real/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /Users/abel/Documents/apps/real/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /Users/abel/Documents/apps/real/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /Users/abel/Documents/apps/real/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /Users/abel/Documents/apps/real/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
