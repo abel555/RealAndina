@@ -1,67 +1,53 @@
-<body style="background-image: url('/assets/no.jpg');
-  background-repeat:no-repeat;
-  background-attachment:scroll;
-  background-position:center center;
-  -webkit-background-size:cover;
-  -moz-background-size:cover;
-  background-size:cover;
-  -o-background-size:cover;color:#fed136;">
-  
+<body style="color:#fed136;">
   <section id="about">
-  <% $par = 0 %>
-  <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Certificates</h2>
+    <% $par = 0 %>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Certificates</h2>
                     <h3></h3>
                     <h3></h3>
-                </div>
-                
+                </div>   
             </div>
-             <% if user_signed_in? %>
-            <div type="button" class="btn ">
-            <%= link_to 'New Cert', new_cert_path %>
-            </div>
-            <% end %>
-             <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <% @certs.each do |cert| %>
-                          <% if $par.even? %>
-                            <li>
-                            <%else%>
-                            <li class="timeline-inverted">
+                <% if user_signed_in? %>
+                    <div type="button" class="btn ">
+                        <%= link_to 'New Cert', new_cert_path %>
+                    </div>
+                <% end %>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="timeline">
+                            <% @certs.each do |cert| %>
+                                <% if $par.even? %>
+                                    <li>
+                                <%else%>
+                                    <li class="timeline-inverted">
 
-                          <% end %>
-                          <% $par +=1 %>
-                           
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" <%= image_tag cert.image.url %> 
-                                
-                            </div>
-                            
-                            <div class="timeline-panel" >
-                                <div class="timeline-heading">
-                                    
-                                    <h4 class="subheading"><%= cert.title %></h4>
+                                <% end %>
+                                <% $par +=1 %>
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" <%= image_tag cert.image.url %> 
                                 </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted" style="color:gray;"><%= cert.body %></p>
+                                <div class="timeline-panel" >
+                                    <div class="timeline-heading">
+                                        <h4 class="subheading"><%= cert.title %></h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted" style="color:gray;"><%= cert.body %></p>
+                                    </div>
+                                    <% if user_signed_in? %>
+                                        <td><%= link_to 'Edit', edit_cert_path(cert) %></td>
+                                        <td><%= link_to 'Destroy', cert, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                                    <% end %>
                                 </div>
-                                <% if user_signed_in? %>
-                              <td><%= link_to 'Edit', edit_cert_path(cert) %></td>
-                              <td><%= link_to 'Destroy', cert, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                                </li>
                             <% end %>
-                            </div>
-                          </li>
-                        <% end %>
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
       
-  </div>
+        </div>
   </section>
-
 
 </body>

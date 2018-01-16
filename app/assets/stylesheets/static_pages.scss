@@ -1,3 +1,104 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "variables.scss";
+@import "mixins.scss";
+#fondito{
+    
+    background-image: url('fon3.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    
+     background-size: cover;
+     position: fixed;
+     
+}
+header {
+    
+    height: 100%;
+    width: 100%;
+    
+    
+    
+    text-align: center;
+    color: white;
+    .intro-text {
+        padding-top: 100px;
+        padding-bottom: 50px;
+        .intro-lead-in {
+            @include serif-font;
+            font-style: italic;
+            font-size: 22px;
+            line-height: 22px;
+            margin-bottom: 25px;
+        }
+        .intro-heading {
+            @include heading-font;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 50px;
+            margin-bottom: 25px;
+            margin-top: 22%;
+        }
+    }
+}
+.text-primary {
+    color: $theme-primary;
+}
+a {
+    color: $theme-primary;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: darken($theme-primary, 10%);
+}
+.btn-primary {
+    @include button-variant(white, $theme-primary, $theme-primary);
+    @include heading-font;
+    font-weight: 700;
+}
+
+.btn-xl {
+    @include button-variant(white, $theme-primary, $theme-primary);
+    @include heading-font;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 20px 40px;
+}
+
+@media(min-width:768px) {
+    header {
+        .intro-text {
+            //padding-top: 300px;
+            //padding-bottom: 200px;
+            .intro-lead-in {
+                @include serif-font;
+                font-style: italic;
+                font-size: 40px;
+                line-height: 40px;
+                
+            }
+            .intro-heading {
+                @include heading-font;
+                font-weight: 700;
+                font-size: 75px;
+                line-height: 75px;
+                
+            }
+        }
+    }
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #f5f5f5;
+    text-align: center;
+  }

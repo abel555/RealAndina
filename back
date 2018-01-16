@@ -1,0 +1,49 @@
+<nav id="mainNav" class="navbar navbar-inverse navbar-custom navbar-fixed-top" style="background-color: #2b2b2b">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Real Andina</a>
+            </div>
+            	<p class="navbar-text pull-right">
+				<% if user_signed_in? %>
+				  Logged in as <strong><%= current_user.email %></strong>.
+				  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+				  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+				<% else %>
+				  
+				  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+				<% end %>
+				</p>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" <%= link_to "Home", home_path %></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" <%= link_to "About Us", about_path %></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" <%= link_to "Products", pros_path %></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" <%= link_to "Crops", cults_path %></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" <%= link_to "Certificates", certs_path %></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" <%= link_to "Contact", contact_path %></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>

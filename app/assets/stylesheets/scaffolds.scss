@@ -1,7 +1,10 @@
+
+@import "variables.scss";
+@import "mixins.scss";
 body {
   background-color: #fff;
   color: #333;
-  margin: 33px;
+  
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -15,7 +18,7 @@ p, ol, ul, td {
 
 pre {
   background-color: #eee;
-  padding: 10px;
+  
   font-size: 11px;
 }
 
@@ -81,4 +84,20 @@ div {
 
 label {
   display: block;
+}
+.navbar{
+  background-color: #2b2b2b;
+  border-color: transparent;
+  .navbar-brand {
+      color: $theme-primary;
+      @include script-font;
+      &:hover,
+      &:focus,
+      &:active,
+      &.active {
+          color: darken($theme-primary, 10%);
+      }
+  }
+  
+  
 }
