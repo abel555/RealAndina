@@ -1,6 +1,7 @@
-<h1>Editing Cult</h1>
-
-<%= render 'form', cult: @cult %>
-
-<%= link_to 'Show', @cult %> |
-<%= link_to 'Back', cults_path %>
+<div class="container">
+    <div class="text-center">
+    <h1>Editing Cult</h1>
+    </div>
+    <%= render 'form', cult: @cult %>
+    <%= link_to 'Back', cults_path, :class => 'btn btn-warning' %>
+</div>

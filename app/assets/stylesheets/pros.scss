@@ -9,7 +9,7 @@ section h3.section-subheading{
  }
 section{}
 section h2.section-heading{
- font-size:40px;margin-top:0;margin-bottom:15px
+ font-size:60px;margin-top:0;margin-bottom:15px
  }
 section h3.section-subheading{
  font-size:16px;text-transform:none;
@@ -99,7 +99,7 @@ footer ul.quicklinks{
   }
  section{}
  section h2.section-heading{
-  font-size:40px;margin-top:0;margin-bottom:15px
+  font-size:60px;margin-top:0;margin-bottom:15px
   }
  section h3.section-subheading{
   font-size:16px;text-transform:none;
@@ -108,7 +108,7 @@ footer ul.quicklinks{
   }
  @media (min-width:768px){
   section{
-    padding:150px 0
+    padding:2% 0;
     }
   }
  .service-heading{
@@ -159,15 +159,21 @@ footer ul.quicklinks{
   margin:0 auto;
   background-color:#fff;
   text-align:center;
-  padding:25px
+  padding:25px;
+  opacity: 0.6;
+  word-wrap: break-word;
+  
   }
 #portfolio .portfolio-item .portfolio-caption h4{
   text-transform:none;
-  margin:0
+  opacity: none;
+  margin: 1%;
+  font-weight: bold;
+  color: #000000;
   }
 #portfolio .portfolio-item .portfolio-caption p{
   font-size:16px;
-  margin:0
+  margin:0;
   }
 footer span.copyright,
 footer ul.quicklinks{
@@ -181,3 +187,14 @@ footer ul.quicklinks{
     margin:0 0 30px
     }
   }
+#prods{
+  background-image: url('/assets/uyunisalar.jpg');
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+ 
+  
+  
+} 
+#white{
+  color:white;
+} 

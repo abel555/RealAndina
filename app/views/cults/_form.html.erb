@@ -1,8 +1,6 @@
 <br>
 <br>
-<br>
-<br>
-<br>
+
 <br>
 <%= form_for @cult, html: { multipart: true } do |f| %>
   <% if @cult.errors.any? %>
@@ -23,7 +21,8 @@
   </div>
   <div class="field">
     <%= f.label :image %><br>
-    <%= f.file_field(:image, {:class => 'form-control'}) %>
+    <%= f.file_field(:image) %>
+    <br>
     <% if f.object.image? %>
       <%= image_tag f.object.image.thumb.url %>
       <%= f.label :remove_image %>
