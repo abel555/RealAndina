@@ -112,11 +112,14 @@ a.active {
     }
 }
 #main-warp{
+   
     height: 100%;
     width: 100%;
+
 }
 #sidebar{
-    width: 65%;
+    
+    width: 45%;
     height: 100%;
     float: left;
     padding-top:5%;
@@ -124,7 +127,7 @@ a.active {
     padding-bottom:5%;   
 }
 #outbar{
-    width: 35%;
+    width: 50%;
     float: left;
     padding-top: 5%;
     padding-right: 3%;
@@ -160,4 +163,9 @@ a.active {
     line-height: 2.8;
     word-spacing: 2px;
     
+}
+iframe{
+    max-width: 100%;
+    min-height: 300px;
+    height: auto;
 }

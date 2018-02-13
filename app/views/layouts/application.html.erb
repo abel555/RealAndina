@@ -34,7 +34,7 @@
   </div>
   <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav">
-      <li class="active"><%= link_to "Home", home_path %></li>
+      <li><%= link_to "Home", home_path %></li>
       <li><%= link_to "About Us", about_path %></li>
       <li><%= link_to "Products", pros_path %></li> 
       <li><%= link_to "Crops", cults_path %></li> 
@@ -70,7 +70,13 @@
 
     <!-- Theme JavaScript -->
    <%# <script src="../app/assets/javascripts/agency.min.js"></script> %>
-
+   <script>
+   $(document).ready(function() {
+    // get current URL path and assign 'active' class
+    var pathname = window.location.pathname;
+    $('.nav > li > a[href="'+pathname+'"]').parent().addClass('active');
+  })
+   </script>
 
 <%= yield %>
 <footer class="footer">
