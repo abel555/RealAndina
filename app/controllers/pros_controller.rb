@@ -28,7 +28,7 @@ class ProsController < ApplicationController
 
     respond_to do |format|
       if @pro.save
-        format.html { redirect_to @pro, notice: 'Pro was successfully created.' }
+        format.html { redirect_to pros_url, notice: 'Producto creado exitosamente.' }
         format.json { render :show, status: :created, location: @pro }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class ProsController < ApplicationController
   def update
     respond_to do |format|
       if @pro.update(pro_params)
-        format.html { redirect_to @pro, notice: 'Pro was successfully updated.' }
+        format.html { redirect_to @pro, notice: 'Producto actualizado exitosamente.' }
         format.json { render :show, status: :ok, location: @pro }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class ProsController < ApplicationController
   def destroy
     @pro.destroy
     respond_to do |format|
-      format.html { redirect_to pros_url, notice: 'Pro was successfully destroyed.' }
+      format.html { redirect_to pros_url, notice: 'Producto eliminado exitosamente.' }
       format.json { head :no_content }
     end
   end

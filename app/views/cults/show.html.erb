@@ -1,14 +1,16 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @cult.title %>
-</p>
+  <p id="notice"><%= notice %></p>
+  <div id="cent">
+  <p>
+    
+    <%= @cult.title %>
+  </p>
 
-<p>
-  <strong>Image:</strong>
-  <%= @cult.image %>
-</p>
+  <div class="shadow"><img class="logo" <%= image_tag @cult.image.url %> 
+  </div>
+  
+  
 
-<%= link_to 'Edit', edit_cult_path(@cult) %> |
-<%= link_to 'Back', cults_path %>
+  <br>
+  <%= link_to 'Atras', cults_path, :class=> 'btn btn-warning' %>
+  </div>

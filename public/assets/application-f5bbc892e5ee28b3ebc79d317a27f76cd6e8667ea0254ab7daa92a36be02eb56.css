@@ -1,0 +1,916 @@
+/* line 4, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+/* line 10, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: "";
+  width: 2px;
+  background-color: #f1f1f1;
+  left: 40px;
+  margin-left: -1.5px;
+}
+
+/* line 20, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+.timeline > li {
+  margin-bottom: 50px;
+  position: relative;
+  min-height: 50px;
+}
+
+/* line 25, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+.timeline > li:after,
+.timeline > li:before {
+  content: " ";
+  display: table;
+}
+
+/* line 29, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+.timeline > li:after {
+  clear: both;
+}
+
+/* line 32, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+.timeline > li
+.timeline-panel {
+  width: 100%;
+  float: right;
+  padding: 0 20px 0 100px;
+  position: relative;
+  text-align: left;
+}
+
+/* line 40, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+.timeline > li
+.timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+/* line 47, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+.timeline > li
+.timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+/* line 54, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+.timeline > li
+.timeline-image {
+  left: 0;
+  margin-left: 0;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 100;
+  background-color: #fed136;
+  color: #fff;
+  border-radius: 100%;
+  border: 7px solid #f1f1f1;
+  text-align: center;
+}
+
+/* line 68, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+.timeline > li
+.timeline-image h4 {
+  font-size: 10px;
+  margin-top: 12px;
+  line-height: 14px;
+}
+
+/* line 74, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+  text-align: left;
+  padding: 0 20px 0 100px;
+}
+
+/* line 79, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+/* line 84, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+/* line 90, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+.timeline > li:last-child {
+  margin-bottom: 0;
+}
+
+/* line 93, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+.timeline .timeline-heading h4 {
+  margin-top: 0;
+  color: inherit;
+}
+
+/* line 97, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+.timeline .timeline-heading h4.subheading {
+  text-transform: none;
+}
+
+/* line 101, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+.timeline .timeline-body > p, .timeline .timeline-body > ul {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  /* line 106, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+  .timeline:before {
+    left: 50%;
+  }
+
+  /* line 109, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+  .timeline > li {
+    margin-bottom: 100px;
+    min-height: 100px;
+  }
+
+  /* line 113, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+  .timeline > li .timeline-panel {
+    width: 41%;
+    float: left;
+    padding: 0 20px 20px 30px;
+    text-align: right;
+  }
+
+  /* line 119, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+  .timeline > li .timeline-image {
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    margin-left: -50px;
+  }
+
+  /* line 125, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+  .timeline > li .timeline-image h4 {
+    font-size: 13px;
+    margin-top: 16px;
+    line-height: 18px;
+  }
+
+  /* line 130, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+  .timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+    text-align: left;
+    padding: 0 30px 20px 20px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 137, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+  .timeline > li .timeline-panel, .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 20px 20px;
+  }
+
+  /* line 140, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+  .timeline > li {
+    min-height: 150px;
+  }
+
+  /* line 143, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+  .timeline > li .timeline-image {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+  }
+
+  /* line 148, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+  .timeline > li .timeline-image h4 {
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 26px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 155, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+  .timeline > li {
+    min-height: 170px;
+  }
+
+  /* line 158, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px 100px;
+  }
+
+  /* line 161, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+  .timeline > li .timeline-image {
+    width: 170px;
+    height: 170px;
+    margin-left: -85px;
+  }
+
+  /* line 166, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+  .timeline > li .timeline-image h4 {
+    margin-top: 40px;
+  }
+
+  /* line 169, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 100px 20px 20px;
+  }
+}
+/* line 174, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/certs.scss */
+#certs {
+  background-image: url("ooo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 100% 100%;
+  color: #7E6417;
+}
+/* line 4, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/cults.scss */
+#cropss {
+  background-image: url("gris.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* line 10, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/cults.scss */
+#cent {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 40%;
+}
+
+/* line 19, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/cults.scss */
+div.shadow {
+  padding-top: 5%;
+  position: absolute;
+  max-width: 45%;
+  max-height: 30%;
+  top: 50%;
+  left: 50%;
+  overflow: visible;
+}
+
+/* line 29, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/cults.scss */
+img.logo {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: -50%;
+  margin-left: -50%;
+}
+/* line 4, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#portfolio .portfolio-item .portfolio-caption p,
+section h3.section-subheading {
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-style: italic;
+}
+
+/* line 11, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+section h2.section-heading {
+  font-size: 60px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* line 14, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+section h3.section-subheading {
+  font-size: 16px;
+  text-transform: none;
+  font-weight: 400;
+  margin-bottom: 75px;
+}
+
+@media (min-width: 768px) {
+  /* line 20, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+  section {
+    padding: 150px 0;
+  }
+}
+/* line 24, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+
+/* line 28, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#portfolio .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+
+/* line 31, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* line 37, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  background: rgba(254, 209, 54, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease .5s;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease 0.5s;
+}
+
+/* line 47, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 1;
+}
+
+/* line 50, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: #fff;
+}
+
+/* line 60, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px;
+}
+
+/* line 63, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+  margin: 0;
+}
+
+/* line 67, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#portfolio .portfolio-item .portfolio-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  text-align: center;
+  padding: 25px;
+}
+
+/* line 74, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#portfolio .portfolio-item .portfolio-caption h4 {
+  text-transform: none;
+  margin: 0;
+}
+
+/* line 78, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#portfolio .portfolio-item .portfolio-caption p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* line 82, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+footer span.copyright,
+footer ul.quicklinks {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 86, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#portfolio * {
+  z-index: 2;
+}
+
+@media (min-width: 767px) {
+  /* line 90, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+/* line 94, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#portfolio .portfolio-item .portfolio-caption p,
+section h3.section-subheading {
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-style: italic;
+}
+
+/* line 101, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+section h2.section-heading {
+  font-size: 60px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* line 104, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+section h3.section-subheading {
+  font-size: 16px;
+  text-transform: none;
+  font-weight: 400;
+  margin-bottom: 75px;
+}
+
+@media (min-width: 768px) {
+  /* line 110, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+  section {
+    padding: 2% 0;
+  }
+}
+/* line 114, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+
+/* line 118, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#portfolio .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+
+/* line 121, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* line 127, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  background: rgba(254, 209, 54, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease .5s;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease 0.5s;
+}
+
+/* line 137, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 1;
+}
+
+/* line 140, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: #fff;
+}
+
+/* line 150, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px;
+}
+
+/* line 153, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+  margin: 0;
+}
+
+/* line 157, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#portfolio .portfolio-item .portfolio-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  text-align: center;
+  padding: 25px;
+  opacity: 0.6;
+  word-wrap: break-word;
+}
+
+/* line 167, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#portfolio .portfolio-item .portfolio-caption h4 {
+  text-transform: none;
+  opacity: none;
+  margin: 1%;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* line 174, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#portfolio .portfolio-item .portfolio-caption p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* line 178, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+footer span.copyright,
+footer ul.quicklinks {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 182, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#portfolio * {
+  z-index: 2;
+}
+
+@media (min-width: 767px) {
+  /* line 186, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+/* line 190, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#prods {
+  background-image: url("gris.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* line 198, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/pros.scss */
+#white {
+  color: white;
+}
+/* line 4, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/scaffolds.scss */
+body {
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  height: 100%;
+}
+
+/* line 14, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 20, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  font-size: 11px;
+}
+
+/* line 26, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 29, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 33, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: white;
+  background-color: #000;
+}
+
+/* line 39, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 43, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 48, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 53, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 57, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 63, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 70, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 80, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 86, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+
+/* line 89, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/scaffolds.scss */
+.navbar {
+  background-color: #2b2b2b;
+  margin: 0;
+  padding: 0;
+}
+/* line 93, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/scaffolds.scss */
+.navbar .navbar-brand {
+  color: #fed136;
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+}
+/* line 96, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/scaffolds.scss */
+.navbar .navbar-brand:hover, .navbar .navbar-brand:focus, .navbar .navbar-brand:active, .navbar .navbar-brand.active {
+  color: #cd9f01;
+}
+/* line 6, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/static_pages.scss */
+#fondito {
+  height: 100%;
+  width: 100%;
+  background-image: url("fon3.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  position: fixed;
+}
+
+/* line 17, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/static_pages.scss */
+header {
+  text-align: center;
+  color: white;
+}
+/* line 25, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/static_pages.scss */
+header .intro-text {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+/* line 28, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/static_pages.scss */
+header .intro-text .intro-lead-in {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
+/* line 35, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/static_pages.scss */
+header .intro-text .intro-heading {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 25px;
+  margin-top: 22%;
+}
+
+/* line 45, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/static_pages.scss */
+.text-primary {
+  color: #fed136;
+}
+
+/* line 48, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/static_pages.scss */
+a {
+  color: #fed136;
+}
+
+/* line 52, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/static_pages.scss */
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #fec503;
+}
+
+/* line 58, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/static_pages.scss */
+.btn-primary {
+  color: white;
+  background-color: #fed136;
+  border-color: #fed136;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* line 10, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/_mixins.scss */
+.btn-primary:focus, .btn-primary.focus {
+  color: white;
+  background-color: #fec503;
+  border-color: #b48b01;
+}
+/* line 16, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/_mixins.scss */
+.btn-primary:hover {
+  color: white;
+  background-color: #fec503;
+  border-color: #f6bf01;
+}
+/* line 21, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/_mixins.scss */
+.btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+  color: white;
+  background-color: #fec503;
+  border-color: #f6bf01;
+}
+/* line 28, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/_mixins.scss */
+.btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus {
+  color: white;
+  background-color: #dcab01;
+  border-color: #b48b01;
+}
+/* line 36, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/_mixins.scss */
+.btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+  background-image: none;
+}
+/* line 44, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/_mixins.scss */
+.btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus {
+  background-color: #fed136;
+  border-color: #fed136;
+}
+/* line 52, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/_mixins.scss */
+.btn-primary .badge {
+  color: #fed136;
+  background-color: white;
+}
+
+/* line 64, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/static_pages.scss */
+.btn-xl {
+  color: white;
+  background-color: #fed136;
+  border-color: #fed136;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 20px 40px;
+}
+/* line 10, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/_mixins.scss */
+.btn-xl:focus, .btn-xl.focus {
+  color: white;
+  background-color: #fec503;
+  border-color: #b48b01;
+}
+/* line 16, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/_mixins.scss */
+.btn-xl:hover {
+  color: white;
+  background-color: #fec503;
+  border-color: #f6bf01;
+}
+/* line 21, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/_mixins.scss */
+.btn-xl:active, .btn-xl.active, .open > .btn-xl.dropdown-toggle {
+  color: white;
+  background-color: #fec503;
+  border-color: #f6bf01;
+}
+/* line 28, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/_mixins.scss */
+.btn-xl:active:hover, .btn-xl:active:focus, .btn-xl:active.focus, .btn-xl.active:hover, .btn-xl.active:focus, .btn-xl.active.focus, .open > .btn-xl.dropdown-toggle:hover, .open > .btn-xl.dropdown-toggle:focus, .open > .btn-xl.dropdown-toggle.focus {
+  color: white;
+  background-color: #dcab01;
+  border-color: #b48b01;
+}
+/* line 36, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/_mixins.scss */
+.btn-xl:active, .btn-xl.active, .open > .btn-xl.dropdown-toggle {
+  background-image: none;
+}
+/* line 44, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/_mixins.scss */
+.btn-xl.disabled:hover, .btn-xl.disabled:focus, .btn-xl.disabled.focus, .btn-xl[disabled]:hover, .btn-xl[disabled]:focus, .btn-xl[disabled].focus, fieldset[disabled] .btn-xl:hover, fieldset[disabled] .btn-xl:focus, fieldset[disabled] .btn-xl.focus {
+  background-color: #fed136;
+  border-color: #fed136;
+}
+/* line 52, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/_mixins.scss */
+.btn-xl .badge {
+  color: #fed136;
+  background-color: white;
+}
+
+@media (min-width: 768px) {
+  /* line 78, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/static_pages.scss */
+  header .intro-text .intro-lead-in {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  /* line 85, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/static_pages.scss */
+  header .intro-text .intro-heading {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 75px;
+  }
+}
+/* line 95, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/static_pages.scss */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px;
+  /* Vertically center the text there */
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+/* line 106, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/static_pages.scss */
+#user {
+  color: white;
+}
+
+@media all and (max-width: 767px) {
+  /* line 110, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/static_pages.scss */
+  .footer {
+    display: none;
+  }
+}
+/* line 114, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/static_pages.scss */
+#main-warp {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 118, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/static_pages.scss */
+#sidebar {
+  width: 65%;
+  height: 100%;
+  float: left;
+  padding-top: 5%;
+  padding-left: 3%;
+  padding-bottom: 5%;
+}
+
+/* line 126, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/static_pages.scss */
+#outbar {
+  width: 35%;
+  float: left;
+  padding-top: 5%;
+  padding-right: 3%;
+}
+
+/* line 133, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/static_pages.scss */
+.aboutCont {
+  background-image: url("quinoa.jpg");
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: 100% 100%;
+  background-size: cover;
+}
+
+/* line 146, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/static_pages.scss */
+#abo {
+  width: 85%;
+  margin-top: 3%;
+}
+
+/* line 153, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/static_pages.scss */
+#text {
+  padding: 8%;
+  padding-top: 3%;
+}
+
+/* line 158, /Users/abel/Documents/apps/RealAndina/app/assets/stylesheets/static_pages.scss */
+#text2 {
+  letter-spacing: 1.5px;
+  line-height: 2.8;
+  word-spacing: 2px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+

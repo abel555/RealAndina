@@ -1,7 +1,18 @@
 
- <div class="container-fluid" id="cropss">
+<body id="cropss">
+<div class="container-fluid">
 <section id="portfolio" class="bg-light-gray">
-
+	<% if notice %>
+		<div class="alert alert-success">
+			<strong>
+				<div style="text-align: center;">
+					<p id="notice">
+						<%= notice %>
+					</p>
+				</div>
+			<strong>
+		</div>
+	<%end%> 
  
 	<div class="row">
 	  <div class="col-lg-12 text-center">
@@ -10,11 +21,15 @@
 	</div>
 	<% if user_signed_in? %>
 	  <div class="actions">
-		<%= link_to 'New Crop', new_cult_path, :class => 'btn btn-primary btn-xs' %>
+		<%= link_to 'Agregar cultivo', new_cult_path, :class => 'btn btn-primary btn-xs' %>
 	  </div>
 	<% end %>
+	<div id="fb-root"></div>
+	
+	<div class="fb-share-button" data-href="<%= request.original_url %>" data-layout="button_count" data-size="small" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore">Compartir</a></div>
+	<br></br>
 	<div class="row">
-	  <% @cults.each do |cult| %>
+	  <% @cults.reverse_each do |cult| %>
 		<div class="col-md-4 col-sm-6 portfolio-item">
 		  <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
 			<div class="portfolio-hover">
@@ -22,14 +37,19 @@
 			  <i class="fa fa-plus fa-3x"></i>
 			  </div>
 			</div>
-			<img class="img-responsive" alt=""<%= image_tag cult.image.thumb4.url %>
+			<link rel="image_src" href="/myimage.jpg"/>
+			<img class="img-responsive" alt=""<%= image_tag cult.image.thumbFull.url %>
 		  </a>
 		  <div class="portfolio-caption">
 			<h4><%= cult.title %></h4>
 			<p class="text-muted">Nombre en ingles</p>
+			<td><%= link_to 'Ver', cult, :class => 'btn btn-primary btn-xs' %></td>
+			
 			<% if user_signed_in? %>
-			  <td><%= link_to 'Edit', edit_cult_path(cult), :class => 'btn btn-warning btn-xs' %></td>
-			  <td><%= link_to 'Delete', cult, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-danger btn-xs' %></td>
+				<br>
+			
+			  <td><%= link_to 'Editar', edit_cult_path(cult), :class => 'btn btn-warning btn-xs' %></td>
+			  <td><%= link_to 'Eliminar', cult, method: :delete, data: { confirm: 'Estas seguro?' }, :class => 'btn btn-danger btn-xs' %></td>
 			<% end %>
 		  </div>
 		</div>
@@ -38,7 +58,7 @@
  
 </section>
 </div>
-
+</body>
 
 
 

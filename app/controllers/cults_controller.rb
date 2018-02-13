@@ -28,7 +28,7 @@ class CultsController < ApplicationController
 
     respond_to do |format|
       if @cult.save
-        format.html { redirect_to @cult, notice: 'Cult was successfully created.' }
+        format.html { redirect_to cults_url, notice: 'Cultivo creado exitosamente.' }
         format.json { render :show, status: :created, location: @cult }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class CultsController < ApplicationController
   def update
     respond_to do |format|
       if @cult.update(cult_params)
-        format.html { redirect_to @cult, notice: 'Cult was successfully updated.' }
+        format.html { redirect_to @cult, notice: 'Cultivo actualizado exitosamente.' }
         format.json { render :show, status: :ok, location: @cult }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class CultsController < ApplicationController
   def destroy
     @cult.destroy
     respond_to do |format|
-      format.html { redirect_to cults_url, notice: 'Cult was successfully destroyed.' }
+      format.html { redirect_to cults_url, notice: 'Cultivo eliminado exitosamente.' }
       format.json { head :no_content }
     end
   end

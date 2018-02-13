@@ -5,6 +5,7 @@
     list-style:none;
     padding:0;
     position:relative;
+    padding-bottom: 20px;
     }
   .timeline:before{
     top:0;
@@ -171,5 +172,10 @@
     }
 
  #certs{
-  color:#fed136;
+   background-image: url('ooo.jpg');
+   background-repeat:no-repeat;
+   background-attachment:fixed;
+   background-size: cover;
+   background-position: 100% 100%;
+   color:#7E6417;
  }   

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-  <title>Real</title>
+    
+  <title>Real Andina</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -38,7 +39,7 @@
       <li><%= link_to "Products", pros_path %></li> 
       <li><%= link_to "Crops", cults_path %></li> 
       <li><%= link_to "Certificates", certs_path %></li>
-      <li><%= link_to "Contact", contact_path, :"data-turbolinks" => false %></li>
+      <li><%= link_to "Contact", contact_path, :"data-turbolinks" => true %></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
         <% if user_signed_in? %>
