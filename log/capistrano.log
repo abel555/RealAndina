@@ -19,3 +19,8 @@
   INFO ---------------------------------------------------------------------------
   INFO [5d7fdf97] Running /usr/bin/env mkdir -p /tmp on 192.241.136.185
  DEBUG [5d7fdf97] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-02-24 21:25:34 -0400 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+  INFO [87c82b7e] Running /usr/bin/env mkdir -p /tmp on 192.241.136.185
+ DEBUG [87c82b7e] Command: /usr/bin/env mkdir -p /tmp
