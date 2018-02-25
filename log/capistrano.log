@@ -1,0 +1,21 @@
+# Logfile created on 2018-02-24 21:21:46 -0400 by logger.rb/56815
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-02-24 21:21:46 -0400 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+  INFO [80a24518] Running /usr/bin/env mkdir -p /tmp on 192.241.136.185
+ DEBUG [80a24518] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-02-24 21:23:05 -0400 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+  INFO [097b44e5] Running /usr/bin/env mkdir -p /tmp on 192.241.136.185
+ DEBUG [097b44e5] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-02-24 21:23:54 -0400 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+  INFO [7bc1bb64] Running /usr/bin/env mkdir -p /tmp on 192.241.136.185
+ DEBUG [7bc1bb64] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-02-24 21:24:44 -0400 cap production deploy:initial
+  INFO ---------------------------------------------------------------------------
+  INFO [5d7fdf97] Running /usr/bin/env mkdir -p /tmp on 192.241.136.185
+ DEBUG [5d7fdf97] Command: /usr/bin/env mkdir -p /tmp
