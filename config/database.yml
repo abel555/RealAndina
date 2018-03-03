@@ -20,7 +20,7 @@ test:
   database: realtest
 
 production:
-adapter: postgresql
+  adapter: postgresql
   encoding: unicode
   pool: 5
   host: 192.241.136.185
