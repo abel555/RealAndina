@@ -92,14 +92,17 @@
     }
   .timeline .timeline-heading h4{
     margin-top:0;
-    color:inherit
+    color:inherit;
+    word-wrap: break-word;
+    
     }
   .timeline .timeline-heading h4.subheading{
     text-transform:none
   
     }
   .timeline .timeline-body>p,.timeline .timeline-body>ul{
-    margin-bottom:0
+    margin-bottom:0;
+    word-wrap: break-word;
   
     }
   @media (min-width:768px){

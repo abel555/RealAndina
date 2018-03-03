@@ -36872,49 +36872,585 @@ Processing by StaticPagesController#contact as HTML
 Completed 200 OK in 36ms (Views: 32.6ms | ActiveRecord: 0.5ms)
 
 
-Started GET "/" for 127.0.0.1 at 2018-03-03 10:30:25 -0400
-  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-03-03 13:38:02 -0400
+Started GET "/certs" for 127.0.0.1 at 2018-03-03 13:38:02 -0400
+Started GET "/static_pages/about" for 127.0.0.1 at 2018-03-03 13:38:02 -0400
+  [1m[35m (114.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (166.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (103.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by StaticPagesController#home as HTML
+Processing by CertsController#index as HTML
   Rendering static_pages/home.html.erb within layouts/application
-  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
-Completed 200 OK in 379ms (Views: 368.5ms | ActiveRecord: 0.0ms)
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 267ms (Views: 264.0ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/static_pages/about" for 127.0.0.1 at 2018-03-03 10:30:29 -0400
+Completed 200 OK in 288ms (Views: 278.9ms | ActiveRecord: 0.0ms)
+
+
+  Rendering certs/index.html.erb within layouts/application
+  [1m[36mCert Load (0.7ms)[0m  [1m[34mSELECT "certs".* FROM "certs"[0m
+  Rendered certs/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 349ms (Views: 60.0ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/pros" for 127.0.0.1 at 2018-03-03 13:38:08 -0400
+Processing by ProsController#index as HTML
+  Rendering pros/index.html.erb within layouts/application
+  [1m[36mPro Load (0.6ms)[0m  [1m[34mSELECT "pros".* FROM "pros"[0m
+  Rendered pros/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 57ms (Views: 40.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/cults" for 127.0.0.1 at 2018-03-03 13:38:12 -0400
+Processing by CultsController#index as HTML
+  Rendering cults/index.html.erb within layouts/application
+  [1m[36mCult Load (0.5ms)[0m  [1m[34mSELECT "cults".* FROM "cults"[0m
+  Rendered cults/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 64ms (Views: 41.3ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/certs" for 127.0.0.1 at 2018-03-03 13:38:15 -0400
+Processing by CertsController#index as HTML
+  Rendering certs/index.html.erb within layouts/application
+  [1m[36mCert Load (0.7ms)[0m  [1m[34mSELECT "certs".* FROM "certs"[0m
+  Rendered certs/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 41ms (Views: 36.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2018-03-03 13:38:17 -0400
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-03 13:39:57 -0400
+Started GET "/certs" for 127.0.0.1 at 2018-03-03 13:39:57 -0400
+  [1m[35m (97.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (99.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+Processing by CertsController#index as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 170ms (Views: 158.4ms | ActiveRecord: 0.0ms)
+
+
+  Rendering certs/index.html.erb within layouts/application
+Started GET "/static_pages/about" for 127.0.0.1 at 2018-03-03 13:39:58 -0400
+  [1m[36mCert Load (1.0ms)[0m  [1m[34mSELECT "certs".* FROM "certs"[0m
 Processing by StaticPagesController#about as HTML
   Rendering static_pages/about.html.erb within layouts/application
   Rendered static_pages/about.html.erb within layouts/application (0.5ms)
-Completed 200 OK in 42ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+  Rendered certs/index.html.erb within layouts/application (36.3ms)
+Completed 200 OK in 242ms (Views: 58.7ms | ActiveRecord: 22.6ms)
 
 
-Started GET "/certs" for 127.0.0.1 at 2018-03-03 10:30:29 -0400
-Processing by CertsController#index as HTML
-  Rendering certs/index.html.erb within layouts/application
-  [1m[36mCert Load (18.9ms)[0m  [1m[34mSELECT "certs".* FROM "certs"[0m
-  Rendered certs/index.html.erb within layouts/application (36.9ms)
-Completed 200 OK in 84ms (Views: 41.7ms | ActiveRecord: 25.9ms)
+Completed 200 OK in 75ms (Views: 70.9ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/static_pages/about" for 127.0.0.1 at 2018-03-03 10:30:40 -0400
-Processing by StaticPagesController#about as HTML
-  Rendering static_pages/about.html.erb within layouts/application
-  Rendered static_pages/about.html.erb within layouts/application (0.6ms)
-Completed 200 OK in 42ms (Views: 38.5ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/pros" for 127.0.0.1 at 2018-03-03 10:30:41 -0400
+Started GET "/pros" for 127.0.0.1 at 2018-03-03 13:40:00 -0400
 Processing by ProsController#index as HTML
   Rendering pros/index.html.erb within layouts/application
-  [1m[36mPro Load (7.4ms)[0m  [1m[34mSELECT "pros".* FROM "pros"[0m
-  Rendered pros/index.html.erb within layouts/application (31.3ms)
-Completed 200 OK in 71ms (Views: 48.5ms | ActiveRecord: 10.3ms)
+  [1m[36mPro Load (0.6ms)[0m  [1m[34mSELECT "pros".* FROM "pros"[0m
+  Rendered pros/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 61ms (Views: 40.8ms | ActiveRecord: 5.4ms)
 
 
-Started GET "/cults" for 127.0.0.1 at 2018-03-03 10:30:42 -0400
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-03 13:40:05 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 88ms (Views: 63.2ms | ActiveRecord: 8.5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-03 13:40:17 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rkkaLvAqfBS/Bxgyf7Xl+EcWXtlP+hv1XO5PvDPU9hO61/39GeKct9P/3A2OzgO0jgXp0b+TafFXb5kCxOxM8Q==", "user"=>{"email"=>"realandina@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (47.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "realandina@hotmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 52ms (ActiveRecord: 47.7ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rkkaLvAqfBS/Bxgyf7Xl+EcWXtlP+hv1XO5PvDPU9hO61/39GeKct9P/3A2OzgO0jgXp0b+TafFXb5kCxOxM8Q==", "user"=>{"email"=>"realandina@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 162ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-03 13:40:27 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NJnduW0zU9Mk729jLqpORUDmeDZEcdCyd72dPel/vpbeCDkGz/Ui6T/NodcDDc835zSpQLepcUrS/Ko2OkiDww==", "user"=>{"email"=>"realandina@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "realandina@hotmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 1.1ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NJnduW0zU9Mk729jLqpORUDmeDZEcdCyd72dPel/vpbeCDkGz/Ui6T/NodcDDc835zSpQLepcUrS/Ko2OkiDww==", "user"=>{"email"=>"realandina@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 169ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-03 13:40:52 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"88EW3cRnaKxoPAxid99DiV5WgkRcO3eE3K9Xk4Wp8tcZUPJiZqEZlnMewtZaeML7+YRTMq/j1nx57mCYVp7Pgg==", "user"=>{"email"=>"realandin@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (7.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "realandin@hotmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (7.1ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2018-03-03 17:40:52.346649"], ["last_sign_in_at", "2018-02-13 20:13:13.064716"], ["sign_in_count", 20], ["updated_at", "2018-03-03 17:40:52.347647"], ["id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 165ms (ActiveRecord: 14.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-03 13:40:52 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 34ms (Views: 31.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pros" for 127.0.0.1 at 2018-03-03 13:40:53 -0400
+Processing by ProsController#index as HTML
+  Rendering pros/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPro Load (0.7ms)[0m  [1m[34mSELECT "pros".* FROM "pros"[0m
+  Rendered pros/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 48ms (Views: 43.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/pros/new" for 127.0.0.1 at 2018-03-03 13:40:54 -0400
+Processing by ProsController#new as HTML
+  Rendering pros/new.html.erb within layouts/application
+  Rendered pros/_form.html.erb (3.3ms)
+  Rendered pros/new.html.erb within layouts/application (6.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 49ms (Views: 44.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pros" for 127.0.0.1 at 2018-03-03 13:41:01 -0400
+Processing by ProsController#index as HTML
+  Rendering pros/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPro Load (1.5ms)[0m  [1m[34mSELECT "pros".* FROM "pros"[0m
+  Rendered pros/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 59ms (Views: 54.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/pros/new" for 127.0.0.1 at 2018-03-03 13:41:03 -0400
+Processing by ProsController#new as HTML
+  Rendering pros/new.html.erb within layouts/application
+  Rendered pros/_form.html.erb (3.5ms)
+  Rendered pros/new.html.erb within layouts/application (6.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 65ms (Views: 61.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/pros" for 127.0.0.1 at 2018-03-03 13:41:09 -0400
+Processing by ProsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B/zRj/ajh1x374bqXnoEIgoaHnM8Vd4W2q/I1uv3NI8JOD45W99JrNjLhnSrptmYTs1hWHLFhILH4LTDahIIqg==", "pro"=>{"title"=>"dfvjdnfvkdfnvkdjfnvdkjfnvkdjfnvkdfnvkjdfnvkjdfnkvd"}, "commit"=>"guardar"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  Rendering pros/new.html.erb within layouts/application
+  Rendered pros/_form.html.erb (2.0ms)
+  Rendered pros/new.html.erb within layouts/application (4.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 44ms (Views: 38.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pros" for 127.0.0.1 at 2018-03-03 13:41:12 -0400
+Processing by ProsController#index as HTML
+  Rendering pros/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPro Load (0.5ms)[0m  [1m[34mSELECT "pros".* FROM "pros"[0m
+  Rendered pros/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/cults" for 127.0.0.1 at 2018-03-03 13:41:16 -0400
 Processing by CultsController#index as HTML
   Rendering cults/index.html.erb within layouts/application
-  [1m[36mCult Load (13.0ms)[0m  [1m[34mSELECT "cults".* FROM "cults"[0m
-  Rendered cults/index.html.erb within layouts/application (24.5ms)
-Completed 200 OK in 73ms (Views: 40.3ms | ActiveRecord: 15.7ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCult Load (1.0ms)[0m  [1m[34mSELECT "cults".* FROM "cults"[0m
+  Rendered cults/index.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 73ms (Views: 48.9ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/cults/new" for 127.0.0.1 at 2018-03-03 13:41:17 -0400
+Processing by CultsController#new as HTML
+  Rendering cults/new.html.erb within layouts/application
+  Rendered cults/_form.html.erb (2.9ms)
+  Rendered cults/new.html.erb within layouts/application (5.7ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 49ms (Views: 44.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cults" for 127.0.0.1 at 2018-03-03 13:41:26 -0400
+Processing by CultsController#index as HTML
+  Rendering cults/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCult Load (1.2ms)[0m  [1m[34mSELECT "cults".* FROM "cults"[0m
+  Rendered cults/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 64ms (Views: 58.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/cults/new" for 127.0.0.1 at 2018-03-03 13:42:07 -0400
+Processing by CultsController#new as HTML
+  Rendering cults/new.html.erb within layouts/application
+  Rendered cults/_form.html.erb (3.1ms)
+  Rendered cults/new.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+    17: 
+    18:   <div class="field">
+    19:     <%= f.label :titulo %><br>
+    20:     <%= f.text_field(:title, {:class => 'form-control'},:maxlength=>"50") %>
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :imagen %><br>
+  
+app/views/cults/_form.html.erb:20:in `block in _app_views_cults__form_html_erb___2203418795213957885_70344788007060'
+app/views/cults/_form.html.erb:5:in `_app_views_cults__form_html_erb___2203418795213957885_70344788007060'
+app/views/cults/new.html.erb:5:in `_app_views_cults_new_html_erb___2475706949293349821_70344727039860'
+Started POST "/cults" for 127.0.0.1 at 2018-03-03 13:42:14 -0400
+Processing by CultsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B/zRj/ajh1x374bqXnoEIgoaHnM8Vd4W2q/I1uv3NI8JOD45W99JrNjLhnSrptmYTs1hWHLFhILH4LTDahIIqg==", "pro"=>{"title"=>"dfvjdnfvkdfnvkdjfnvdkjfnvkdjfnvkdfnvkjdfnvkjdfnkvd"}, "commit"=>"guardar"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.2) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.2) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+devise (4.3.0) lib/devise/controllers/helpers.rb:253:in `handle_unverified_request'
+actionpack (5.1.2) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.2) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.2) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.2) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.2) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.2) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pros" for 127.0.0.1 at 2018-03-03 13:42:18 -0400
+Processing by ProsController#index as HTML
+  Rendering pros/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPro Load (0.3ms)[0m  [1m[34mSELECT "pros".* FROM "pros"[0m
+  Rendered pros/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 45ms (Views: 42.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cults" for 127.0.0.1 at 2018-03-03 13:42:19 -0400
+Started GET "/certs" for 127.0.0.1 at 2018-03-03 13:42:19 -0400
+Processing by CultsController#index as HTML
+Processing by CertsController#index as HTML
+  Rendering certs/index.html.erb within layouts/application
+  Rendering cults/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCert Load (0.9ms)[0m  [1m[34mSELECT "certs".* FROM "certs"[0m
+  Rendered certs/index.html.erb within layouts/application (8.5ms)
+  [1m[36mCult Load (3.5ms)[0m  [1m[34mSELECT "cults".* FROM "cults"[0m
+  Rendered cults/index.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 45ms (Views: 40.4ms | ActiveRecord: 1.5ms)
+
+
+Completed 200 OK in 76ms (Views: 68.6ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-03 13:42:19 -0400
+Started GET "/pros" for 127.0.0.1 at 2018-03-03 13:42:19 -0400
+Processing by ProsController#index as HTML
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendering pros/index.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+Started GET "/static_pages/about" for 127.0.0.1 at 2018-03-03 13:42:19 -0400
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  [1m[36mUser Load (20.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered static_pages/about.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPro Load (7.4ms)[0m  [1m[34mSELECT "pros".* FROM "pros"[0m
+Completed 200 OK in 55ms (Views: 45.5ms | ActiveRecord: 6.9ms)
+
+
+  Rendered pros/index.html.erb within layouts/application (44.4ms)
+Completed 200 OK in 105ms (Views: 74.1ms | ActiveRecord: 27.9ms)
+
+
+  [1m[36mUser Load (6.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 71ms (Views: 62.3ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-03 13:42:20 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 35ms (Views: 31.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cults" for 127.0.0.1 at 2018-03-03 13:42:21 -0400
+Processing by CultsController#index as HTML
+  Rendering cults/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCult Load (0.4ms)[0m  [1m[34mSELECT "cults".* FROM "cults"[0m
+  Rendered cults/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 50ms (Views: 45.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/cults/new" for 127.0.0.1 at 2018-03-03 13:42:23 -0400
+Processing by CultsController#new as HTML
+  Rendering cults/new.html.erb within layouts/application
+  Rendered cults/_form.html.erb (8.3ms)
+  Rendered cults/new.html.erb within layouts/application (11.8ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+    17: 
+    18:   <div class="field">
+    19:     <%= f.label :titulo %><br>
+    20:     <%= f.text_field(:title, {:class => 'form-control'},:maxlength=>"50") %>
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :imagen %><br>
+  
+app/views/cults/_form.html.erb:20:in `block in _app_views_cults__form_html_erb___2203418795213957885_70344789325120'
+app/views/cults/_form.html.erb:5:in `_app_views_cults__form_html_erb___2203418795213957885_70344789325120'
+app/views/cults/new.html.erb:5:in `_app_views_cults_new_html_erb___2475706949293349821_70344789369380'
+Started GET "/cults/new" for 127.0.0.1 at 2018-03-03 13:42:38 -0400
+Processing by CultsController#new as HTML
+  Rendering cults/new.html.erb within layouts/application
+  Rendered cults/_form.html.erb (2.3ms)
+  Rendered cults/new.html.erb within layouts/application (5.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 47ms (Views: 42.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/cults" for 127.0.0.1 at 2018-03-03 13:42:43 -0400
+Processing by CultsController#index as HTML
+  Rendering cults/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCult Load (1.1ms)[0m  [1m[34mSELECT "cults".* FROM "cults"[0m
+  Rendered cults/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 61ms (Views: 54.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/certs" for 127.0.0.1 at 2018-03-03 13:42:44 -0400
+Processing by CertsController#index as HTML
+  Rendering certs/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCert Load (0.5ms)[0m  [1m[34mSELECT "certs".* FROM "certs"[0m
+  Rendered certs/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 47ms (Views: 43.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/certs/new" for 127.0.0.1 at 2018-03-03 13:42:47 -0400
+Processing by CertsController#new as HTML
+  Rendering certs/new.html.erb within layouts/application
+  Rendered certs/_form.html.erb (9.0ms)
+  Rendered certs/new.html.erb within layouts/application (11.4ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 55ms (Views: 51.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/certs" for 127.0.0.1 at 2018-03-03 13:43:04 -0400
+Processing by CertsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Og/N9+kKQbNEh2pSpfFT0wRdm1wzrcfu9KmexirXPN8hZpA9FRWWyibK4Q6dYYd0EC5Y1l6gg/SnMPJtePmhTA==", "cert"=>{"title"=>"ijsdnjfksdjnjkfasjoifnbksdiojfnjksdfjisdbnifojbsdifjnsdkjnfjsdnfjisdnifojbsdnifjnbsdoijfnsdojfnsdoinosdsdfoijsdofmsdofnsodnfsdjfs", "body"=>"ijsdnjfksdjnjkfasjoifnbksdiojfnjksdfjisdbnifojbsdifjnsdkjnfjsdnfjisdnifojbsdnifjnbsdoijfnsdojfnsdoinosdsdfoijsdofmsdofnsodnfsdjfsijsdnjfksdjnjkfasjoifnbksdiojfnjksdfjisdbnifojbsdifjnsdkjnfjsdnfjisdnifojbsdnifjnbsdoijfnsdojfnsdoinosdsdfoijsdofmsdofnsodnfsdjfsijsdnjfksdjnjkfasjoifnbksdiojfnjksdfjisdbnifojbsdifjnsdkjnfjsdnfjisdnifojbsdnifjnbsdoijfnsdojfnsdoinosdsdfoijsdofmsdofnsodnfsdjfsijsdnjfksdjnjkfasjoifnbksdiojfnjksdfjisdbnifojbsdifjnsdkjnfjsdnfjisdnifojbsdnifjnbsdoijfnsdojfnsdoinosdsdfoijsdofmsdofnsodnfsdjfsijsdnjfksdjnjkfasjoifnbksdiojfnjksdfjisdbnifojbsdifjnsdkjnfjsdnfjisdnifojbsdnifjnbsdoijfnsdojfnsdoinosdsdfoijsdofmsdofnsodnfsdjfsijsdnjfksdjnjkfasjoifnbksdiojfnjksdfjisdbnifojbsdifjnsdkjnfjsdnfjisdnifojbsdnifjnbsdoijfnsdojfnsdoinosdsdfoijsdofmsdofnsodnfsdjfs", "image"=>#<ActionDispatch::Http::UploadedFile:0x007ff4d9a7c788 @tempfile=#<Tempfile:/var/folders/yw/vjgpjtp91tvgls65sx74tn180000gn/T/RackMultipart20180303-4245-1xd5tda.gif>, @original_filename="fa-cert.gif", @content_type="image/gif", @headers="Content-Disposition: form-data; name=\"cert[image]\"; filename=\"fa-cert.gif\"\r\nContent-Type: image/gif\r\n">}, "commit"=>"Guardar"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (7.8ms)[0m  [1m[32mINSERT INTO "certs" ("title", "body", "image", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "ijsdnjfksdjnjkfasjoifnbksdiojfnjksdfjisdbnifojbsdifjnsdkjnfjsdnfjisdnifojbsdnifjnbsdoijfnsdojfnsdoinosdsdfoijsdofmsdofnsodnfsdjfs"], ["body", "ijsdnjfksdjnjkfasjoifnbksdiojfnjksdfjisdbnifojbsdifjnsdkjnfjsdnfjisdnifojbsdnifjnbsdoijfnsdojfnsdoinosdsdfoijsdofmsdofnsodnfsdjfsijsdnjfksdjnjkfasjoifnbksdiojfnjksdfjisdbnifojbsdifjnsdkjnfjsdnfjisdnifojbsdnifjnbsdoijfnsdojfnsdoinosdsdfoijsdofmsdofnsodnfsdjfsijsdnjfksdjnjkfasjoifnbksdiojfnjksdfjisdbnifojbsdifjnsdkjnfjsdnfjisdnifojbsdnifjnbsdoijfnsdojfnsdoinosdsdfoijsdofmsdofnsodnfsdjfsijsdnjfksdjnjkfasjoifnbksdiojfnjksdfjisdbnifojbsdifjnsdkjnfjsdnfjisdnifojbsdnifjnbsdoijfnsdojfnsdoinosdsdfoijsdofmsdofnsodnfsdjfsijsdnjfksdjnjkfasjoifnbksdiojfnjksdfjisdbnifojbsdifjnsdkjnfjsdnfjisdnifojbsdnifjnbsdoijfnsdojfnsdoinosdsdfoijsdofmsdofnsodnfsdjfsijsdnjfksdjnjkfasjoifnbksdiojfnjksdfjisdbnifojbsdifjnsdkjnfjsdnfjisdnifojbsdnifjnbsdoijfnsdojfnsdoinosdsdfoijsdofmsdofnsodnfsdjfs"], ["image", "fa-cert.gif"], ["created_at", "2018-03-03 17:43:04.434691"], ["updated_at", "2018-03-03 17:43:04.434691"]]
+  [1m[35m (6.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/certs
+Completed 302 Found in 280ms (ActiveRecord: 14.7ms)
+
+
+Started GET "/certs" for 127.0.0.1 at 2018-03-03 13:43:04 -0400
+Processing by CertsController#index as HTML
+  Rendering certs/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCert Load (0.5ms)[0m  [1m[34mSELECT "certs".* FROM "certs"[0m
+  Rendered certs/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 42ms (Views: 38.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/certs" for 127.0.0.1 at 2018-03-03 13:45:41 -0400
+Processing by CertsController#index as HTML
+  Rendering certs/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCert Load (0.5ms)[0m  [1m[34mSELECT "certs".* FROM "certs"[0m
+  Rendered certs/index.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "    word-wrap": expected ";", was ": break-word;"):
+    12:   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    13:   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    14:   
+    15:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    16:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    17:   <%= csrf_meta_tags %>
+    18:     
+  
+app/assets/stylesheets/certs.scss:96
+app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___4609475320100824100_70344727503120'
+Started GET "/certs" for 127.0.0.1 at 2018-03-03 13:46:19 -0400
+Processing by CertsController#index as HTML
+  Rendering certs/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCert Load (0.4ms)[0m  [1m[34mSELECT "certs".* FROM "certs"[0m
+  Rendered certs/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 111ms (Views: 108.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/certs" for 127.0.0.1 at 2018-03-03 13:46:41 -0400
+Processing by CertsController#index as HTML
+  Rendering certs/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCert Load (0.4ms)[0m  [1m[34mSELECT "certs".* FROM "certs"[0m
+  Rendered certs/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 88ms (Views: 85.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2018-03-03 13:46:53 -0400
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 54ms (Views: 49.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/certs" for 127.0.0.1 at 2018-03-03 13:46:54 -0400
+Processing by CertsController#index as HTML
+  Rendering certs/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCert Load (1.2ms)[0m  [1m[34mSELECT "certs".* FROM "certs"[0m
+  Rendered certs/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 83ms (Views: 78.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/cults" for 127.0.0.1 at 2018-03-03 13:47:01 -0400
+Processing by CultsController#index as HTML
+  Rendering cults/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCult Load (0.5ms)[0m  [1m[34mSELECT "cults".* FROM "cults"[0m
+  Rendered cults/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 52ms (Views: 48.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pros" for 127.0.0.1 at 2018-03-03 13:47:07 -0400
+Processing by ProsController#index as HTML
+  Rendering pros/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPro Load (0.5ms)[0m  [1m[34mSELECT "pros".* FROM "pros"[0m
+  Rendered pros/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 48ms (Views: 43.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pros/new" for 127.0.0.1 at 2018-03-03 13:47:08 -0400
+Processing by ProsController#new as HTML
+  Rendering pros/new.html.erb within layouts/application
+  Rendered pros/_form.html.erb (4.2ms)
+  Rendered pros/new.html.erb within layouts/application (7.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 51ms (Views: 48.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pros" for 127.0.0.1 at 2018-03-03 13:47:13 -0400
+Processing by ProsController#index as HTML
+  Rendering pros/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPro Load (0.8ms)[0m  [1m[34mSELECT "pros".* FROM "pros"[0m
+  Rendered pros/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 63ms (Views: 56.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/static_pages/about" for 127.0.0.1 at 2018-03-03 13:47:17 -0400
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 43ms (Views: 40.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2018-03-03 13:47:18 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 47ms (Views: 43.6ms | ActiveRecord: 0.6ms)
 
 

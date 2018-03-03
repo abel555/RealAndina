@@ -18,13 +18,3 @@ development:
 test:
   <<: *default
   database: realtest
-
-production:
-  adapter: postgresql
-  encoding: unicode
-  pool: 5
-  host: 192.241.136.185
-  database: real_production
-  username: rails
-  password: 059179263496becc29e616f06bd84482
-
