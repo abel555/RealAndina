@@ -2,7 +2,7 @@
 lock '3.4.1'
 
 set :application, 'RealAndina'
-set :repo_url, 'https://gitlab.com/abelTaqui/RealAndina.git'
+set :repo_url, 'https://github.com/abel555/RealAndina.git'
 set :user, "deploy"
 set :stages, %w(production staging)
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
