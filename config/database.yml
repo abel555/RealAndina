@@ -22,10 +22,10 @@ staging:
   <<: *default
   database: real_staging
   username: deploy
-  password: <%= ENV["DATABASE_PASSWORD"] %>
+  password: 73441710bliokiN
 
 production:
   <<: *default
   database: real_production 
   username: deploy
-  password: <%= ENV["DATABASE_PASSWORD"] %>
+  password: 73441710bliokiN
