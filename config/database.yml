@@ -3,14 +3,13 @@ default: &default
   encoding: unicode
   pool: 5
   host: localhost
-  database: real
-  pool:
-  username: abel
-  password: 73441710bliokiN
+ 
 
 development:
   <<: *default
   database: real
+  username: abel
+  password: 73441710bliokiN
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -20,10 +19,10 @@ test:
   database: realtest
 
 staging:
-<<: *default
-database: real_staging
-username: deploy
-password: <%= ENV["DATABASE_PASSWORD"] %>
+  <<: *default
+  database: real_staging
+  username: deploy
+  password: <%= ENV["DATABASE_PASSWORD"] %>
 
 production:
   <<: *default
