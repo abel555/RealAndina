@@ -42,7 +42,7 @@ class CultsController < ApplicationController
   def update
     respond_to do |format|
       if @cult.update(cult_params)
-        format.html { redirect_to @cult, notice: 'Cultivo actualizado exitosamente.' }
+        format.html { redirect_to cults_url, notice: 'Cultivo actualizado exitosamente.' }
         format.json { render :show, status: :ok, location: @cult }
       else
         format.html { render :edit }

@@ -42,7 +42,7 @@ class ProsController < ApplicationController
   def update
     respond_to do |format|
       if @pro.update(pro_params)
-        format.html { redirect_to @pro, notice: 'Producto actualizado exitosamente.' }
+        format.html { redirect_to pros_url, notice: 'Producto actualizado exitosamente.' }
         format.json { render :show, status: :ok, location: @pro }
       else
         format.html { render :edit }
